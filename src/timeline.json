@@ -1,0 +1,175 @@
+{
+ "fps": 30,
+ "rate": 1,
+ "total": 19284,
+ "segments": [
+  {
+   "id": "S00",
+   "part": 0,
+   "from": 0,
+   "dur": 877,
+   "audioFrom": 20,
+   "audio": 812
+  },
+  {
+   "id": "S01",
+   "part": 1,
+   "from": 877,
+   "dur": 1801,
+   "audioFrom": 20,
+   "audio": 1736
+  },
+  {
+   "id": "S02",
+   "part": 1,
+   "from": 2678,
+   "dur": 1808,
+   "audioFrom": 20,
+   "audio": 1743
+  },
+  {
+   "id": "S03",
+   "part": 1,
+   "from": 4486,
+   "dur": 1762,
+   "audioFrom": 20,
+   "audio": 1697
+  },
+  {
+   "id": "S04",
+   "part": 1,
+   "from": 6248,
+   "dur": 1294,
+   "audioFrom": 20,
+   "audio": 1229
+  },
+  {
+   "id": "S05",
+   "part": 1,
+   "from": 7542,
+   "dur": 1196,
+   "audioFrom": 20,
+   "audio": 1131
+  },
+  {
+   "id": "S06",
+   "part": 1,
+   "from": 8738,
+   "dur": 1131,
+   "audioFrom": 20,
+   "audio": 1066
+  },
+  {
+   "id": "S07",
+   "part": 1,
+   "from": 9869,
+   "dur": 1443,
+   "audioFrom": 20,
+   "audio": 1378
+  },
+  {
+   "id": "S08",
+   "part": 1,
+   "from": 11312,
+   "dur": 949,
+   "audioFrom": 20,
+   "audio": 884
+  },
+  {
+   "id": "T08",
+   "part": 1,
+   "from": 12261,
+   "dur": 150,
+   "audioFrom": 0,
+   "audio": 0
+  },
+  {
+   "id": "S09",
+   "part": 2,
+   "from": 12411,
+   "dur": 927,
+   "audioFrom": 20,
+   "audio": 862
+  },
+  {
+   "id": "T09",
+   "part": 2,
+   "from": 13338,
+   "dur": 150,
+   "audioFrom": 0,
+   "audio": 0
+  },
+  {
+   "id": "S10",
+   "part": 3,
+   "from": 13488,
+   "dur": 623,
+   "audioFrom": 20,
+   "audio": 483
+  },
+  {
+   "id": "S11",
+   "part": 3,
+   "from": 14111,
+   "dur": 642,
+   "audioFrom": 20,
+   "audio": 502
+  },
+  {
+   "id": "S12",
+   "part": 3,
+   "from": 14753,
+   "dur": 743,
+   "audioFrom": 20,
+   "audio": 603
+  },
+  {
+   "id": "S13",
+   "part": 3,
+   "from": 15496,
+   "dur": 486,
+   "audioFrom": 20,
+   "audio": 346
+  },
+  {
+   "id": "S14",
+   "part": 3,
+   "from": 15982,
+   "dur": 433,
+   "audioFrom": 20,
+   "audio": 293
+  },
+  {
+   "id": "S15",
+   "part": 3,
+   "from": 16415,
+   "dur": 690,
+   "audioFrom": 20,
+   "audio": 550
+  },
+  {
+   "id": "S16",
+   "part": 3,
+   "from": 17105,
+   "dur": 570,
+   "audioFrom": 20,
+   "audio": 430
+  },
+  {
+   "id": "S17",
+   "part": 3,
+   "from": 17675,
+   "dur": 832,
+   "audioFrom": 20,
+   "audio": 692
+  },
+  {
+   "id": "S18",
+   "part": 4,
+   "from": 18507,
+   "dur": 777,
+   "audioFrom": 20,
+   "audio": 562
+  }
+ ]
+}

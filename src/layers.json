@@ -1,0 +1,82 @@
+[
+ {
+  "id": 1,
+  "name": "Currículo Nacional",
+  "doc": "CNEB (R.M. 281-2016-MINEDU) · Programa curricular de Educación Secundaria",
+  "where": "Matemática → «Resuelve problemas de regularidad, equivalencia y cambio» → estándar nivel 7 (fin del ciclo VII)",
+  "owner": "MINEDU",
+  "panorama": "Perfil de egreso (11 aprendizajes) → 31 competencias por área → 4 competencias de Matemática",
+  "focus": "Resuelve problemas de regularidad, equivalencia y cambio",
+  "thread": "Competencia · 4 capacidades · estándar nivel 7"
+ },
+ {
+  "id": 2,
+  "name": "PEI 2026–2030",
+  "doc": "Proyecto Educativo Institucional 2026–2030, Los Olivos",
+  "where": "5.4 Línea de base · 6.2 Objetivo institucional 01 · 6.3–6.4 Metas CGE 1",
+  "owner": "Equipo directivo",
+  "panorama": "Identidad · Diagnóstico · 6 objetivos institucionales · 5 compromisos de gestión escolar",
+  "focus": "Objetivo institucional 01 (CGE 1)",
+  "thread": "Prioridad: aprendizajes · Meta 2026: 65 %"
+ },
+ {
+  "id": 3,
+  "name": "PCI 2026",
+  "doc": "Proyecto Curricular Institucional 2026",
+  "where": "3.2 · 5.3 · 7.2–7.3 · 8 · 9.2–9.4 · 12.1 · 12.3",
+  "owner": "Comité de Gestión Pedagógica · Dirección Académica",
+  "panorama": "Plan de estudios de secundaria: 11 áreas, 45 horas",
+  "focus": "Matemática, 14 horas → Álgebra, 3 horas",
+  "thread": "3 h de Álgebra · método · evaluación · formato de la programación"
+ },
+ {
+  "id": 4,
+  "name": "Programación anual",
+  "doc": "Temario anual 2026 · Álgebra 4.° secundaria",
+  "where": "VI Unidad · Semana 26 (21–25 set.)",
+  "owner": "Docente del curso · revisa Coordinación",
+  "panorama": "38 semanas del año",
+  "focus": "Semana 26 (con arcos desde las semanas 22 y 24)",
+  "thread": "Semana 26: sistemas de ecuaciones lineales"
+ },
+ {
+  "id": 5,
+  "name": "Unidad didáctica VI",
+  "doc": "Unidad de las semanas 24 a 28 (estructura: PCI 7.3)",
+  "where": "Semanas 24–28",
+  "owner": "Docente · revisa Coordinación",
+  "panorama": "Semanas 24, 25, 26, 27, 28",
+  "focus": "Semana 26 + los criterios de evaluación",
+  "thread": "Criterios de evaluación"
+ },
+ {
+  "id": 6,
+  "name": "Cuaderno de trabajo",
+  "doc": "Cuaderno de trabajo de Álgebra 4.° · Tomo 2 (III y IV bimestre)",
+  "where": "Semana 26 · páginas 109–113",
+  "owner": "El colegio",
+  "panorama": "Tomo 2: III y IV bimestre (semanas 20 a 38)",
+  "focus": "Páginas 109–113",
+  "thread": "Páginas 109–113"
+ },
+ {
+  "id": 7,
+  "name": "Sesión y clase",
+  "doc": "Presentación «Semana 26», 24 diapositivas",
+  "where": "Diap. 3 propósito · 7 lista de cotejo · 10 debate · 13–22 práctica · 23 metacognición",
+  "owner": "Docente",
+  "panorama": "24 diapositivas",
+  "focus": "Diapositiva 10: «¿Quién tiene razón?»",
+  "thread": "El debate"
+ },
+ {
+  "id": 8,
+  "name": "Estudiante",
+  "doc": "Tarjeta de aprendizaje (mañana siguiente, 5 minutos)",
+  "where": "Parte A: resolver y justificar · Parte B: ¿tiene razón María?",
+  "owner": "Docente aplica",
+  "panorama": "Una sección de estudiantes",
+  "focus": "Un estudiante y su tarjeta",
+  "thread": "Evidencia"
+ }
+]

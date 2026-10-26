@@ -1,0 +1,222 @@
+<title>Guion Álgebra Semana 26</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,600;7..72,700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one reading column; each scene is a row with narration (left) beside what appears on screen (right). */
+:root {
+  --bg: #F6F7F9; --surface: #FFFFFF; --fg: #13233A; --muted: #5E6B7A; --line: #DCE2E8;
+  --navy: #002E5D; --orange: #D9530A; --cyan: #2A9CAB; --soft-navy: #E6EDF5; --soft-orange: #FDEDE3;
+  --display: "Literata", Georgia, serif; --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0E1620; --surface: #16212E; --fg: #E6ECF2; --muted: #9AA8B6; --line: #2A3747;
+  --navy: #8FB6E3; --orange: #FF8A47; --cyan: #67D2DF; --soft-navy: #1B2B3E; --soft-orange: #3A2416; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0E1620; --surface: #16212E; --fg: #E6ECF2; --muted: #9AA8B6; --line: #2A3747;
+  --navy: #8FB6E3; --orange: #FF8A47; --cyan: #67D2DF; --soft-navy: #1B2B3E; --soft-orange: #3A2416; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-block: 40px 80px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 44px); color: var(--navy); line-height: 1.15; }
+.kicker { font-family: var(--mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.lede { max-width: 68ch; font-size: 19px; margin: 14px 0 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 22px 0 0; padding: 0; list-style: none; font-size: 15px; color: var(--muted); }
+.facts b { color: var(--fg); font-weight: 600; }
+.notes { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.note { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; min-width: 0; }
+.note h2 { font-size: 20px; color: var(--navy); margin-bottom: 8px; }
+.note ul { margin: 0; padding-left: 20px; } .note li { margin: 6px 0; }
+.legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; font-size: 14px; }
+.chip { padding: 2px 10px; border-radius: 999px; font-weight: 600; }
+.chip.down { background: var(--soft-navy); color: var(--navy); } .chip.up { background: var(--soft-orange); color: var(--orange); }
+.part { margin-top: 56px; }
+.part > h2 { font-size: 26px; padding-bottom: 10px; border-bottom: 3px solid var(--navy); color: var(--navy); }
+.part.up > h2 { border-color: var(--orange); color: var(--orange); }
+.part.both > h2 { border-image: linear-gradient(90deg, var(--navy), var(--orange)) 1; }
+.scene { padding: 26px 0; border-bottom: 1px solid var(--line); }
+.scene header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.scene .num { font-family: var(--mono); font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; min-width: 92px; }
+.scene h3 { font-size: 22px; }
+.scene .tc { font-family: var(--mono); font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.scene .layer { font-size: 13px; font-weight: 700; padding: 2px 10px; border-radius: 999px; background: var(--soft-navy); color: var(--navy); }
+.part.up .scene .layer { background: var(--soft-orange); color: var(--orange); }
+.io { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 12px 0 0; font-size: 15px; }
+.io div { min-width: 0; } .io dt { display: inline; color: var(--muted); font-weight: 600; } .io dt::after { content: ": "; } .io dd { display: inline; margin: 0; }
+.cols { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 28px; margin-top: 14px; }
+@media (max-width: 760px) { .cols { grid-template-columns: 1fr; gap: 14px; } }
+h4 { margin: 0 0 6px; font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.narr p { margin: 0; font-size: 18px; line-height: 1.6; max-width: 62ch; }
+.narr p.silent { color: var(--muted); font-style: italic; }
+.screen ul { margin: 0; padding-left: 18px; font-size: 15.5px; color: var(--fg); } .screen li { margin: 0 0 6px; }
+.toc { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 14px; }
+.toc a { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--line); }
+.toc a:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+</style>
+
+<div class="wrap">
+  <div class="kicker">Guion completo · versión 4 · 21 oct. 2026 · borrador para segunda opinión</div>
+  <h1>Una clase, un estudiante, todo el sistema</h1>
+  <p class="lede">Video explicativo de 10:42 sobre cómo el logro de aprendizaje de una sola sesión (su output) recorre todo el sistema curricular del colegio: del Currículo Nacional hasta el estudiante, y de vuelta. Caso: Los Olivos, Álgebra, 4.° de secundaria, semana 26 (21–25 de setiembre de 2026), sistemas de ecuaciones lineales.</p>
+  <ul class="facts">
+    <li><b>Duración</b> 10:42</li>
+    <li><b>Formato</b> 1920×1080, 30 fps</li>
+    <li><b>Voz</b> narración en español (voz sintética), con subtítulos incrustados</li>
+    <li><b>Partes</b> 0 Apertura · 1 Hacia abajo · 2 Escenario A · 3 Escenario B · 4 Cierre</li>
+  </ul>
+
+  <div class="notes">
+    <div class="note">
+      <h2>Cómo leer este guion</h2>
+      <ul>
+        <li><b>Narración</b> es el texto exacto que se escucha.</li>
+        <li><b>En pantalla</b> describe lo que se ve mientras tanto.</li>
+        <li>A la izquierda hay siempre un embudo de 8 etapas: 1 Currículo Nacional · 2 PEI · 3 PCI · 4 Programación anual · 5 Unidad didáctica · 6 Cuaderno de trabajo · 7 Sesión · 8 Estudiante.</li>
+        <li>Al lado de cada etapa, el «hilo» muestra su output: lo que entrega a la siguiente.</li>
+      </ul>
+      <div class="legend"><span class="chip down">Bajada: decisiones (azul marino)</span><span class="chip up">Subida: evidencia (naranja)</span></div>
+    </div>
+    <div class="note">
+      <h2>Puntos para revisar</h2>
+      <ul>
+        <li>El video muestra cómo <i>debería</i> funcionar. Hoy la unidad VI no tiene plan escrito, el temario no incluye los criterios que pide el PCI y el análisis mensual no está evidenciado.</li>
+        <li>La línea de base del PEI (60 % satisfactorio) no coincide con la del PCI (15–27 % en A + AD en Matemática de secundaria).</li>
+        <li>El PCI declara aprendizaje basado en problemas, pero el temario, el cuaderno y la clase son instrucción directa.</li>
+        <li>La agrupación de las 31 competencias por área y el número de aprendizajes del perfil de egreso (11) vienen del conocimiento general del CNEB; conviene verificarlos.</li>
+        <li>La pregunta del debate se muestra reformulada; la diapositiva original dice «¿Quién tiene razón?».</li>
+        <li>El estándar se simplificó a «explicar, con ejemplos, cuándo no tienen una sola solución». El texto original habla de plantear afirmaciones sobre casos especiales y descartarlas con contraejemplos.</li>
+        <li>Solo el III bimestre lleva meses (ago.–oct.); faltan las fechas de los demás bimestres.</li>
+        <li>Ana, Bruno y María son casos ficticios. El 85 % y el «4 de cada 10» son ejemplos.</li>
+        <li>La escena 17 conserva la metáfora «Y la sangre llega al cerebro».</li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Escenas">
+    <a href="#s00">0 Apertura</a><a href="#s01">1 Currículo</a><a href="#s02">2 PEI</a><a href="#s03">3 PCI</a><a href="#s04">4 Programación</a><a href="#s05">5 Unidad</a><a href="#s06">6 Cuaderno</a><a href="#s07">7 Sesión</a><a href="#s08">8 Estudiante</a><a href="#s09">9 Ana</a><a href="#s10">10–17 Bruno</a><a href="#s18">18 Cierre</a>
+  </nav>
+
+<section class="part down"><h2>Parte 0 · Apertura</h2>
+<article class="scene" id="s00"><header><span class="num">Escena 0</span><h3>Una clase</h3><span class="tc">0:00–0:29</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>Vamos a seguir una sola clase: Álgebra, cuarto de secundaria, semana veintiséis: sistemas de ecuaciones lineales. Queremos entender cómo el logro de aprendizaje de esa clase, que es su resultado, impacta en todo el sistema. Cada etapa recibe algo de la anterior y entrega algo a la siguiente. Primero bajaremos desde el Currículo Nacional hasta el estudiante. Después subiremos con lo que el estudiante logró.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>El embudo de 8 etapas aparece a la izquierda, todo inactivo; «Estudiante» brilla suave.</li><li>Título: «Una clase, un estudiante, todo el sistema».</li><li>Pregunta del video: «¿Cómo impacta el logro de aprendizaje de una clase en todo el sistema?»</li><li>Esquema: Recibe (input) → Etapa → Entrega (output).</li><li>En «Primero bajaremos», aparece la flecha animada hacia abajo.</li></ul></div>
+</div></article>
+</section>
+<section class="part down"><h2>Parte 1 · Hacia abajo: de todo, a esta clase</h2>
+<article class="scene" id="s01"><header><span class="num">Escena 1</span><h3>Currículo Nacional</h3><span class="tc">0:29–1:29</span><span class="layer">Etapa 1</span></header>
+<dl class="io"><div><dt>Entrega (output)</dt><dd>Competencia · 4 capacidades · estándar nivel 7</dd></div></dl>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>Todo empieza en el Currículo Nacional, el documento del Ministerio de Educación que dice qué debe aprender todo estudiante del Perú. Parte de un perfil de egreso: lo que un estudiante debe haber logrado al terminar quinto de secundaria. Para llegar ahí, define treinta y una competencias, organizadas por áreas. Matemática tiene cuatro. Esta clase de Álgebra pertenece a una sola: «Resuelve problemas de regularidad, equivalencia y cambio». Esa competencia se divide en cuatro capacidades: traduce, comunica, usa estrategias y argumenta. Y un estándar describe cómo se ve el logro al terminar la secundaria: resolver sistemas de ecuaciones lineales y explicar, con ejemplos, cuándo no tienen una sola solución. Recuerden esa última idea. A la siguiente etapa, el Currículo entrega qué aprender y cómo reconocer que se aprendió. Cómo lograrlo lo decide cada colegio.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Anillo de 11 piezas: «Perfil de egreso: lo que debe haber logrado un estudiante al terminar 5.° de secundaria».</li><li>Parrilla «31 competencias, organizadas por áreas», con 12 áreas; Matemática ya marcada en verde claro.</li><li>Miga fija: 31 competencias → Matemática · 4 → 1 competencia → 4 capacidades (verdes de claro a oscuro).</li><li>Zoom a «Matemática · 4 de las 31 competencias»: se nombran las cuatro; «Resuelve problemas de regularidad, equivalencia y cambio» en verde más oscuro, con la etiqueta «Esta clase de Álgebra».</li><li>Tarjeta «Currículo Nacional (MINEDU)»: 4 capacidades (Traduce · Comunica · Usa estrategias · Argumenta, en verde oscuro). Estándar: «Cómo se ve el logro al terminar la secundaria»: «resolver sistemas de ecuaciones lineales» · «explicar, con ejemplos, cuándo no tienen una sola solución» (se subraya en «Recuerden esa última idea»).</li></ul></div>
+</div></article>
+<article class="scene" id="s02"><header><span class="num">Escena 2</span><h3>PEI 2026–2030</h3><span class="tc">1:29–2:29</span><span class="layer">Etapa 2</span></header>
+<dl class="io"><div><dt>Recibe (input)</dt><dd>Competencia · 4 capacidades · estándar nivel 7</dd></div><div><dt>Entrega (output)</dt><dd>Prioridad: aprendizajes · Meta 2026: 65 %</dd></div></dl>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>El PEI es el plan estratégico del colegio a cinco años, de 2026 a 2030. Recibe el Currículo Nacional y se pregunta qué significa para nuestro colegio. Para construirlo, el equipo directivo responde tres preguntas. Quiénes somos: misión, visión y valores. Dónde estamos: un diagnóstico de cómo aprenden hoy nuestros estudiantes. Y a dónde vamos: seis objetivos, alineados a los cinco compromisos de gestión escolar del Ministerio. El objetivo que toca esta clase de Álgebra es el objetivo uno: mejorar los aprendizajes. Para medirlo, el equipo directivo fijó una meta: noventa por ciento de estudiantes en nivel satisfactorio en Matemática y Comunicación al 2030, empezando por sesenta y cinco por ciento este año. A la siguiente etapa, el PEI entrega una prioridad y una meta que se puede medir.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Tres columnas que se arman al nombrarlas: Quiénes somos (misión, visión, valores) · Dónde estamos (diagnóstico: cómo aprenden hoy) · A dónde vamos (6 objetivos institucionales y una fila de 5 CGE).</li><li>Foco: todo se atenúa salvo el Objetivo 01 y el CGE 1, unidos por una línea; marca «▼ esta clase de Álgebra».</li><li>Tarjeta «PEI 2026–2030»: Objetivo 01: mejorar los aprendizajes, contextualizando la propuesta pedagógica. Meta: 90 % en nivel satisfactorio en Matemática y Comunicación al 2030 · 65 % en 2026, fijada por el equipo directivo.</li></ul></div>
+</div></article>
+<article class="scene" id="s03"><header><span class="num">Escena 3</span><h3>PCI 2026</h3><span class="tc">2:29–3:28</span><span class="layer">Etapa 3</span></header>
+<dl class="io"><div><dt>Recibe (input)</dt><dd>Prioridad: aprendizajes · Meta 2026: 65 %</dd></div><div><dt>Entrega (output)</dt><dd>3 h de Álgebra · método · evaluación · formato de la programación</dd></div></dl>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>El PCI es el plan curricular de este año. Recibe el Currículo y la prioridad del PEI, y decide tres cosas. Primero, las horas: secundaria tiene cuarenta y cinco horas semanales, y Matemática, por ser la prioridad, recibe catorce. Aquí el colegio organiza cada área en cursos y les pone nombre: Álgebra es uno de los cursos de Matemática, con tres horas. Segundo, el método: resolver problemas en contextos reales. Tercero, la evaluación: evaluar en cada sesión y retroalimentar con preguntas, no solo con la respuesta correcta. Además, el equipo directivo fija cómo mirar los resultados: cada mes, con una meta de treinta por ciento de estudiantes en logro previsto o destacado. A la siguiente etapa, el PCI entrega las horas, el método, la forma de evaluar y el formato de la programación anual.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Mapa de horas por área en secundaria, cada bloque del tamaño de sus horas (total: 45 h semanales): Matemática 14 · Ciencia y Tecnología 7 · Comunicación 6 · Inglés 3 · Ciencias Sociales 3 · Educación Física 3 · DPCC 2 · Educación Religiosa 2 · Tutoría 2 · Educación para el Trabajo 2 · Arte y Cultura 1.</li><li>Matemática se divide en «Álgebra · 3 h» y un resto sin nombre: «Matemática · 14 h, organizada por el colegio en cursos».</li><li>Tarjeta «PCI 2026 · decide tres cosas»: 1 · Horas (45 h · Matemática 14 h · Álgebra 3 h) · 2 · Método (resolver problemas en contextos reales) · 3 · Evaluación (en cada sesión · escala AD, A, B, C · retroalimentar con preguntas) · Resultados (cada mes · meta 30 % en A + AD en Matemática, fijada por el equipo directivo).</li></ul></div>
+</div></article>
+<article class="scene" id="s04"><header><span class="num">Escena 4</span><h3>Programación anual</h3><span class="tc">3:28–4:11</span><span class="layer">Etapa 4</span></header>
+<dl class="io"><div><dt>Recibe (input)</dt><dd>3 h de Álgebra · método · evaluación · formato de la programación</dd></div><div><dt>Entrega (output)</dt><dd>Semana 26: sistemas de ecuaciones lineales</dd></div></dl>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>La programación anual es el sílabo del curso para todo el año. Recibe del PCI las horas y la competencia, y las reparte en treinta y ocho semanas, en cuatro bimestres. Sistemas de ecuaciones lineales cae en la semana veintiséis, del veintiuno al veinticinco de setiembre, en el tercer bimestre. Y no llega sola: cada semana se apoya en las anteriores. Matrices, en la semana veintidós, más determinantes, en la veinticuatro, hacen posible la semana veintiséis, porque los sistemas se clasifican con determinantes. A la siguiente etapa, la programación entrega el orden: qué se enseña, cuándo y después de qué.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Las 38 semanas en cuatro filas, una por bimestre: I (1–9) · II (10–19) · III (20–28, ago.–oct.) · IV (29–38).</li><li>En «cada semana se apoya en las anteriores», aparecen conectores › entre semanas consecutivas.</li><li>Foco en las semanas 22, 24 y 26, con dos arcos: 22 → 26 y 24 → 26.</li><li>Ecuación: [Sem 22 · Matrices] + [Sem 24 · Determinantes] → [Sem 26 · 21–25 set. · Sistemas de ecuaciones lineales].</li><li>Tarjeta «Temario anual 2026 (sílabo) · Álgebra 4.° · 3 h por semana». Semana 26: definición · clasificación compatible e incompatible · reducción, igualación y sustitución.</li></ul></div>
+</div></article>
+<article class="scene" id="s05"><header><span class="num">Escena 5</span><h3>Unidad didáctica VI</h3><span class="tc">4:11–4:51</span><span class="layer">Etapa 5</span></header>
+<dl class="io"><div><dt>Recibe (input)</dt><dd>Semana 26: sistemas de ecuaciones lineales</dd></div><div><dt>Entrega (output)</dt><dd>Criterios de evaluación</dd></div></dl>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>La unidad didáctica agrupa varias semanas alrededor de un propósito. No es lo mismo que un bimestre: un bimestre puede tener más de una unidad. La sexta unidad del año va de la semana veinticuatro a la veintiocho, dentro del tercer bimestre. Tiene cuatro piezas: una situación que dé sentido al aprendizaje, los desempeños que se buscan, los criterios de evaluación y la secuencia de sesiones. A la siguiente etapa, la unidad entrega los criterios: lo que el docente va a mirar en la respuesta del estudiante. Sin criterios, no hay con qué comparar la evidencia.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Semanas 20 a 28 bajo una llave «III bimestre»; dentro, otra llave «Unidad VI · semanas 24 a 28».</li><li>Cuatro casillas que se tiñen al nombrarlas: situación significativa · desempeños · criterios de evaluación · secuencia de sesiones.</li><li>Foco: la semana 26 y la casilla de criterios.</li><li>Tarjeta «Unidad didáctica VI · semanas 24 a 28»: las 4 piezas. Entrega: los criterios, lo que el docente mirará en la respuesta del estudiante.</li></ul></div>
+</div></article>
+<article class="scene" id="s06"><header><span class="num">Escena 6</span><h3>Cuaderno de trabajo</h3><span class="tc">4:51–5:28</span><span class="layer">Etapa 6</span></header>
+<dl class="io"><div><dt>Recibe (input)</dt><dd>Criterios de evaluación</dd></div><div><dt>Entrega (output)</dt><dd>Páginas 109–113</dd></div></dl>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>El cuaderno de trabajo es lo que el estudiante tiene en la mano. Lo elabora el colegio: dos tomos por curso al año, uno para el primer y segundo bimestre, y otro para el tercero y el cuarto. Sigue la programación anual semana por semana, y cada página indica qué competencia entrena. La semana veintiséis ocupa las páginas ciento nueve a ciento trece: la teoría de los tres métodos, la clasificación con determinantes, problemas resueltos y ocho ejercicios para la clase. A la siguiente etapa, el cuaderno entrega el material con el que se practica.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Dos tomos: Tomo 1 (I y II bimestre) y Tomo 2 (III y IV bimestre), este último resaltado.</li><li>Línea: «Cada página indica: Competencia 2: Resuelve problemas de regularidad, equivalencia y cambio».</li><li>Abanicos de páginas por semana, de la 20 a la 28 (y un bloque «IV bimestre · sem 29–38»), sin números de página.</li><li>Foco: la semana 26 se abre en cinco páginas, p. 109 a p. 113. Debajo: Teoría de los tres métodos · Clasificación con determinantes · Problemas resueltos · 8 ejercicios «Trabajando en clase».</li><li>Tarjeta «Cuaderno de trabajo de Álgebra 4.° · Tomo 2»: semana 26 · páginas 109–113 · lo elabora el colegio · dos tomos por curso al año.</li></ul></div>
+</div></article>
+<article class="scene" id="s07"><header><span class="num">Escena 7</span><h3>Sesión y clase</h3><span class="tc">5:28–6:17</span><span class="layer">Etapa 7</span></header>
+<dl class="io"><div><dt>Recibe (input)</dt><dd>Semana 26 · Criterios de evaluación · Páginas 109–113 (tres inputs)</dd></div><div><dt>Entrega (output)</dt><dd>El debate</dd></div></dl>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>En la sesión, lo que recibió el docente se vuelve clase: la semana veintiséis del temario, los criterios de la unidad y las páginas del cuaderno. Esta sesión tiene veinticuatro diapositivas. Presenta el propósito de la clase y comparte los criterios en una lista de cotejo, es decir, la lista de lo que se va a observar. Luego abre un debate: ¿dos ecuaciones con dos incógnitas siempre tienen una sola solución? Cada estudiante defiende su posición con un ejemplo. Eso trabaja la capacidad argumenta que pide el estándar. Al final, reflexionan sobre cómo aprendieron. La sesión entrega a los estudiantes una experiencia de aprendizaje, practicar, debatir y justificar, y una pregunta que se puede evaluar.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Llegan tres inputs, uno de cada etapa que los entrega (4, 5 y 6).</li><li>24 miniaturas de diapositivas; se marcan 3 propósito · 7 lista de cotejo · 10 debate · 23 metacognición.</li><li>La diapositiva 10 se agranda: «¿Dos ecuaciones con dos incógnitas siempre tienen una sola solución?» y «Defiende tu respuesta con un ejemplo.» Nota al pie: «Pregunta reformulada. En la presentación original: «¿Quién tiene razón?»».</li><li>En «estándar», una línea recorre el hilo de la etapa 7 a la 1 y el Currículo Nacional destella.</li><li>Tarjeta «Presentación «Semana 26» · 24 diapositivas»: las diapositivas clave. Entrega: a los estudiantes, practicar, debatir y justificar · una pregunta que se puede evaluar.</li></ul></div>
+</div></article>
+<article class="scene" id="s08"><header><span class="num">Escena 8</span><h3>Estudiante</h3><span class="tc">6:17–6:48</span><span class="layer">Etapa 8</span></header>
+<dl class="io"><div><dt>Recibe (input)</dt><dd>El debate</dd></div><div><dt>Entrega (output)</dt><dd>Evidencia</dd></div></dl>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>Y llegamos al estudiante. En los últimos cinco minutos de la clase responde una tarjeta. La parte A muestra si sabe resolver el sistema. La parte B muestra si sabe argumentar: si puede explicar, con un ejemplo, que dos ecuaciones no siempre tienen una sola solución. Sus respuestas son la evidencia: el logro de aprendizaje de esta clase. Ahora la dirección se invierte. Veamos qué pasa con esa evidencia en dos escenarios distintos.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Una sección de 30 estudiantes; uno se resalta.</li><li>Tarjeta «Últimos 5 minutos de la clase». Parte A: Resuelve x + y = 5, x − y = 1 y explica por qué elegiste ese método. Parte B: María dice: «Dos ecuaciones con dos incógnitas siempre tienen exactamente una solución». ¿Estás de acuerdo? Justifica con un ejemplo. Niveles: 1 responde sin justificar · 2 dice «no siempre» y da una razón · 3 da un ejemplo de sistema sin solución o con infinitas soluciones. Evidencia: las respuestas a A y B, valoradas con estos niveles: el logro de aprendizaje de la clase.</li><li>En «evidencia», la ficha «Evidencia» entra al hilo. En «Ahora la dirección se invierte», la flecha se detiene abajo.</li><li>Aparece «Casos ficticios» en el pie de pantalla.</li></ul></div>
+</div></article>
+<article class="scene" id="t08"><header><span class="num">Transición</span><h3>Dos escenarios distintos</h3><span class="tc">6:48–6:53</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p class="silent">Sin voz.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>5 s. El hilo y el embudo pasan a gris. Texto: «Dos escenarios distintos · Casos ficticios».</li></ul></div>
+</div></article>
+</section>
+<section class="part up"><h2>Parte 2 · Escenario A: logra el objetivo</h2>
+<article class="scene" id="s09"><header><span class="num">Escena 9</span><h3>Ana, nivel 3</h3><span class="tc">6:53–7:24</span><span class="layer">Etapa 8 → 7 → 3 → 1</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>En un primer escenario, Ana responde en nivel tres: resuelve el sistema y muestra que María se equivoca, porque dos rectas paralelas nunca se cruzan. La docente lo registra y la clase continúa. En su análisis mensual, la coordinación ve que la sección logró el objetivo, y eso suma a la meta del PCI. Al cierre del bimestre, el logro queda registrado en la competencia del Currículo Nacional. Cuando el aprendizaje llega, la ruta es corta.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Ruta corta en naranja: solo se activan las etapas 8, 7, 3 y 1; las etapas 2, 4, 5 y 6 quedan en gris.</li><li>Una tarjeta por parada. Estudiante: Ana · Nivel 3 · dibuja dos rectas paralelas: «ninguna solución». Sesión: la docente registra en la lista de cotejo y continúa con la semana 27. PCI: análisis mensual, sección en logro (85 %, ejemplo), suma a la meta del PCI. Currículo: cierre del bimestre, la competencia queda registrada (SIAGIE).</li><li>Las fichas del hilo de las etapas 8, 7, 3 y 1 se vuelven naranjas a medida que pasa la evidencia.</li></ul></div>
+</div></article>
+<article class="scene" id="t09"><header><span class="num">Transición</span><h3>Otro escenario</h3><span class="tc">7:24–7:29</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p class="silent">Sin voz.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>5 s. Todo vuelve a gris. Texto: «Otro escenario · Casos ficticios».</li></ul></div>
+</div></article>
+</section>
+<section class="part up"><h2>Parte 3 · Escenario B: aún no lo logra</h2>
+<article class="scene" id="s10"><header><span class="num">Escena 10</span><h3>Bruno, nivel 1</h3><span class="tc">7:29–7:50</span><span class="layer">Etapa 8</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>En otro escenario, Bruno resuelve bien el sistema, pero en la parte B dice que está de acuerdo con María, sin justificar. Cuatro de cada diez estudiantes de su sección responden igual. Sabe el procedimiento; todavía no sabe argumentar.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Vuelve la sección de 30; 12 estudiantes se ponen naranjas: «4 de cada 10 · ejemplo».</li><li>Tarjeta «Bruno · Nivel 1». Parte A: x = 3, y = 2 · correcto. Parte B: «Sí, estoy de acuerdo», sin justificar. Lectura: sabe el procedimiento; todavía no sabe argumentar.</li></ul></div>
+</div></article>
+<article class="scene" id="s11"><header><span class="num">Escena 11</span><h3>Sesión y clase</h3><span class="tc">7:50–8:11</span><span class="layer">Etapa 7</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>La docente lee qué parte falló. Como Bruno sí resolvió, el problema no está en los determinantes de la semana veinticuatro: está en argumentar. En la siguiente clase vuelve al debate y le hace preguntas hasta que él mismo encuentre un caso sin solución.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Vuelve la diapositiva 10 con borde naranja. En «semana veinticuatro», aparece el arco 24 → 26 en gris y se tacha: el problema no está en los determinantes.</li><li>Tarjeta. Se activa con: la tarjeta de Bruno y su sección. Ve: falló la parte B, no la parte A. Decide: vuelve al debate y retroalimenta con preguntas. Cuándo: la siguiente clase.</li></ul></div>
+</div></article>
+<article class="scene" id="s12"><header><span class="num">Escena 12</span><h3>Cuaderno de trabajo</h3><span class="tc">8:11–8:36</span><span class="layer">Etapa 6</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>Si el mismo resultado aparece en varias secciones, ya no es un estudiante: es un patrón. El colegio revisa las páginas ciento nueve a ciento trece del cuaderno y ve que entrenan el procedimiento, pero no la argumentación. Un patrón no prueba que el material sea la causa, pero sí justifica revisarlo.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Páginas 109–113 con borde naranja. Leyenda de capacidades: «Usa estrategias» encendida; «Argumenta» apagada, con contorno naranja.</li><li>Tarjeta. Se activa con: el mismo patrón en varias secciones de 4.°. Ve: las páginas entrenan el procedimiento, pero ningún ejercicio pide explicar o justificar. Decide: el colegio revisa esas páginas y agrega ítems que pidan justificar con un ejemplo. Cuándo: revisión mensual; impresión del año siguiente.</li></ul></div>
+</div></article>
+<article class="scene" id="s13"><header><span class="num">Escena 13</span><h3>Unidad didáctica VI</h3><span class="tc">8:36–8:52</span><span class="layer">Etapa 5</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>Con ese mismo dato, el docente ajusta lo que queda de la unidad: el proyecto STEAM de las semanas veintisiete y veintiocho incluirá un momento para plantear y refutar afirmaciones.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Semanas 24 a 28; la 27 y la 28 en naranja (Proyecto STEAM III). La casilla «Criterios de evaluación» late.</li><li>Tarjeta. Se activa con: el resultado de la semana 26. Ve: qué queda de la unidad (semanas 27–28, Proyecto STEAM III). Decide: incluye en el proyecto un momento para plantear y refutar afirmaciones. Cuándo: esa misma semana.</li></ul></div>
+</div></article>
+<article class="scene" id="s14"><header><span class="num">Escena 14</span><h3>Programación anual</h3><span class="tc">8:52–9:07</span><span class="layer">Etapa 4</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>La programación anual también se ajusta: la semana veintiséis no solo dirá qué contenidos enseñar, sino qué debe poder argumentar el estudiante.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Fila del III bimestre; la semana 26 con borde naranja. Bajo su contenido aparece una línea nueva: «+ Criterio de argumentación».</li><li>Tarjeta. Se activa con: la revisión del cuaderno. Ve: la semana 26 lista contenidos, pero no qué debe poder argumentar el estudiante. Decide: agrega a la semana 26 un criterio de argumentación para el próximo año. Cuándo: jornada de reflexión de julio o diciembre.</li></ul></div>
+</div></article>
+<article class="scene" id="s15"><header><span class="num">Escena 15</span><h3>PCI 2026</h3><span class="tc">9:07–9:30</span><span class="layer">Etapa 3</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>Cada mes, la coordinación compara los resultados de todas las secciones. Si están por debajo del umbral acordado, activa los grupos de refuerzo del PCI. Y en diciembre, el equipo directivo decide qué cambia en el PCI del próximo año: tiempo, método o materiales.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>«Álgebra · 3 h» con borde naranja; debajo, seis secciones de 4.°, varias en naranja «bajo el umbral acordado» (sin cifras).</li><li>Tarjeta. Se activa con: el análisis mensual. Ve: varias secciones bajo el umbral acordado en la misma capacidad. Decide: activa los grupos de refuerzo; en diciembre propone cambios para el PCI 2027. Cuándo: mensual · jornadas de julio y diciembre.</li></ul></div>
+</div></article>
+<article class="scene" id="s16"><header><span class="num">Escena 16</span><h3>PEI 2026–2030</h3><span class="tc">9:30–9:49</span><span class="layer">Etapa 2</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>En diciembre, la evidencia llega al PEI. El diagnóstico ya no dice solo que Matemática está baja; dice qué capacidad está baja y en qué grado. Con eso, el objetivo uno se vuelve preciso.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Vuelven las tres columnas; «Dónde estamos» se enciende en naranja («qué capacidad está baja y en qué grado») y luego el Objetivo 01.</li><li>Tarjeta. Se activa con: la jornada de reflexión de diciembre. Ve: que en 4.° la capacidad débil es «argumenta afirmaciones». Decide: actualiza el diagnóstico con datos por capacidad y precisa el objetivo 01. Cuándo: diciembre.</li></ul></div>
+</div></article>
+<article class="scene" id="s17"><header><span class="num">Escena 17</span><h3>Currículo Nacional</h3><span class="tc">9:49–10:16</span><span class="layer">Etapa 1</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>Y la sangre llega al cerebro. La tarjeta de Bruno vuelve a la misma idea del Currículo Nacional con la que empezamos: explicar, con ejemplos, cuándo un sistema no tiene una sola solución. Una capacidad, de una competencia, entre treinta y una. El Currículo no cambia. Cambia cómo nuestro colegio lo hace llegar a cada estudiante.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Zoom inverso: las 4 capacidades con «Argumenta» en naranja → las 4 competencias de Matemática con «Regularidad, equivalencia y cambio» en naranja → las 31 competencias, con una sola pieza naranja.</li><li>Tarjeta «Currículo Nacional (MINEDU)». Estándar: «explicar, con ejemplos, cuándo no tienen una sola solución», subrayado en naranja. Se activa con: el cierre del bimestre. Ve: la competencia registrada (SIAGIE). Decide: el Currículo no cambia; cambia cómo el colegio lo aplica.</li><li>Al final, todo el hilo queda naranja, de abajo a arriba.</li></ul></div>
+</div></article>
+</section>
+<section class="part both"><h2>Parte 4 · Cierre</h2>
+<article class="scene" id="s18"><header><span class="num">Escena 18</span><h3>El principio</h3><span class="tc">10:16–10:42</span><span class="layer">Etapa todas</span></header>
+<div class="cols">
+<div class="narr"><h4>Narración</h4><p>Las decisiones bajan desde el Currículo Nacional hasta el estudiante: de todo, a esta clase. La evidencia sube por el mismo hilo, desde el estudiante hasta el Currículo. Cada capa sabe qué mira, cuándo lo mira y qué hace cuando el aprendizaje no llega. Así debería funcionar.</p></div>
+<div class="screen"><h4>En pantalla</h4><ul><li>Dos flechas a la vez: azul marino hacia abajo y naranja hacia arriba. Las fichas del hilo alternan azul y naranja.</li><li>Tabla de responsables, fila por fila. Docente · cada clase · lee la tarjeta y reenseña. Coordinación · mensual · compara secciones y activa refuerzo. El colegio · mensual · revisa el cuaderno. Equipo directivo · julio y diciembre · ajusta programación, PCI y PEI.</li><li>Texto final: «Las decisiones bajan. La evidencia sube.» y «Así debería funcionar.», en pantalla 6 segundos.</li></ul></div>
+</div></article>
+</section>
+</div>

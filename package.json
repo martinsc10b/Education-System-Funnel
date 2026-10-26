@@ -1,0 +1,27 @@
+{
+  "name": "la-vena-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tts": "node scripts/tts.mjs",
+    "verify": "node scripts/stt.mjs",
+    "timeline": "node scripts/timeline.mjs",
+    "stills": "node scripts/stills.mjs",
+    "studio": "remotion studio",
+    "render:p01": "remotion render la-vena-p01 out/la-vena-parte-0-1.mp4 --codec=h264 --crf=18",
+    "render:full": "remotion render la-vena out/la-vena.mp4 --codec=h264 --crf=18"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.532",
+    "@remotion/cli": "4.0.532",
+    "@remotion/google-fonts": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "typescript": "5.9.2"
+  }
+}

@@ -1,0 +1,56 @@
+{
+ "voice": "lZmnvfWF4ko4J7F7QDtX",
+ "segments": [
+  {
+   "id": "S00",
+   "part": 0,
+   "text": "Vamos a seguir una sola clase: Álgebra, cuarto de secundaria, semana veintiséis, sistemas de ecuaciones lineales. Primero bajaremos desde el Currículo Nacional hasta el estudiante. Después subiremos con lo que el estudiante aprendió."
+  },
+  {
+   "id": "S01",
+   "part": 1,
+   "text": "Todo empieza en el Currículo Nacional. Es el documento del Ministerio de Educación que dice qué debe aprender todo estudiante del Perú. Define un perfil de egreso y treinta y una competencias, organizadas por áreas. Matemática tiene cuatro. Esta clase pertenece a una sola: «Resuelve problemas de regularidad, equivalencia y cambio», la competencia del álgebra. Cada competencia tiene capacidades, aquí cuatro: traduce, comunica, usa estrategias y argumenta. Y tiene estándares que describen cómo se ve el logro. Al terminar la secundaria, el nivel siete pide resolver sistemas de ecuaciones lineales, entender su conjunto solución y plantear afirmaciones sobre casos especiales, descartándolas con contraejemplos. Recuerden esa última idea. Hacia abajo, el Currículo entrega qué aprender y cómo reconocer que se aprendió. Cómo lograrlo lo decide cada colegio."
+  },
+  {
+   "id": "S02",
+   "part": 1,
+   "text": "El PEI es el plan estratégico del colegio a cinco años, de 2026 a 2030. Toma el Currículo Nacional y se pregunta qué significa para nosotros. Para construirlo, el equipo directivo responde tres preguntas. Quiénes somos: misión, visión y valores. Dónde estamos: un diagnóstico de cómo aprenden hoy nuestros estudiantes. Y a dónde vamos: objetivos y metas alineados a los cinco compromisos de gestión escolar del Ministerio. Nuestro PEI tiene seis objetivos. El que toca esta clase es el objetivo uno: mejorar los aprendizajes contextualizando la propuesta pedagógica. Su meta es noventa por ciento en nivel satisfactorio en Matemática y Comunicación al 2030, empezando por sesenta y cinco por ciento este año. Hacia abajo, el PEI entrega una prioridad y una meta que se puede medir."
+  },
+  {
+   "id": "S03",
+   "part": 1,
+   "text": "El PCI es el plan curricular de este año. Toma el Currículo Nacional y las prioridades del PEI, y decide cómo enseñamos: cuántas horas recibe cada área, con qué método y cómo se evalúa. En secundaria reparte cuarenta y cinco horas semanales. Como el diagnóstico mostró que Matemática es la prioridad uno, le da catorce horas; tres son de Álgebra. Pide resolver problemas en contextos reales, evaluar en cada sesión y retroalimentar con preguntas, no solo con la respuesta correcta. Hacia abajo entrega las horas, el método, la forma de evaluar y el formato que deben seguir la programación anual y las unidades. Y fija cómo vamos a mirar los resultados: cada mes, con una meta de treinta por ciento en logro previsto o destacado.",
+   "extraTail": 75
+  },
+  {
+   "id": "S04",
+   "part": 1,
+   "text": "La programación anual es el plan del curso para todo el año. Toma del PCI las horas, el calendario y la competencia, y los reparte en treinta y ocho semanas. Sistemas de ecuaciones lineales cae en la semana veintiséis, del veintiuno al veinticinco de setiembre, dentro de la sexta unidad. Y no llega sola: depende de matrices, en la semana veintidós, y de determinantes, en la veinticuatro, porque los sistemas se clasifican con determinantes. Hacia abajo entrega el orden: qué se enseña, cuándo y después de qué."
+  },
+  {
+   "id": "S05",
+   "part": 1,
+   "text": "La unidad didáctica agrupa varias semanas alrededor de un propósito. La sexta unidad va de la semana veinticuatro a la veintiocho. Toma de la programación anual qué semanas le tocan, y según el PCI debe tener cuatro piezas: una situación que dé sentido al aprendizaje, los desempeños que se buscan, los criterios de evaluación y la secuencia de sesiones. Hacia abajo entrega lo más importante: los criterios. Sin ellos, la evidencia de una clase no tiene dónde anclarse."
+  },
+  {
+   "id": "S06",
+   "part": 1,
+   "text": "El cuaderno de trabajo es lo que el estudiante tiene en la mano. Lo elabora la dirección pedagógica, un tomo por bimestre, siguiendo la programación anual semana por semana. Por eso no puede decir algo distinto al PCI ni al Currículo: cada página indica qué competencia entrena, y debería entrenar sus cuatro capacidades. La semana veintiséis ocupa las páginas ciento nueve a ciento trece: la teoría de los tres métodos, la clasificación con determinantes, problemas resueltos y ocho ejercicios para la clase. Hacia abajo entrega el material con el que se practica."
+  },
+  {
+   "id": "S07",
+   "part": 1,
+   "text": "La sesión es donde todo lo anterior se vuelve clase. El docente toma los criterios de la unidad y las páginas del cuaderno, y arma su secuencia; esta tiene veinticuatro diapositivas. Presenta el propósito, comparte los criterios en una lista de cotejo y abre un debate: ¿quién tiene razón? ¿Dos ecuaciones con dos incógnitas siempre tienen una sola respuesta? Ese debate es exactamente lo que pide el Currículo Nacional: un caso especial y un contraejemplo. Al final, los estudiantes reflexionan sobre cómo aprendieron. Hacia abajo, la sesión entrega una experiencia de aprendizaje y una pregunta que se puede evaluar."
+  },
+  {
+   "id": "S08",
+   "part": 1,
+   "text": "Y llegamos al estudiante. A la mañana siguiente responde una tarjeta de cinco minutos. La parte A mide si sabe resolver. La parte B mide si sabe argumentar. No medimos velocidad; medimos pensamiento. Ahora la dirección se invierte. Veamos qué pasa con esa evidencia en dos escenarios distintos."
+  },
+  {
+   "id": "T08",
+   "part": 1,
+   "silent": 150
+  }
+ ]
+}

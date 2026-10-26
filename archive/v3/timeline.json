@@ -1,0 +1,87 @@
+{
+ "fps": 30,
+ "rate": 1,
+ "total": 11221,
+ "segments": [
+  {
+   "id": "S00",
+   "part": 0,
+   "from": 0,
+   "dur": 519,
+   "audioFrom": 20,
+   "audio": 454
+  },
+  {
+   "id": "S01",
+   "part": 1,
+   "from": 519,
+   "dur": 1834,
+   "audioFrom": 20,
+   "audio": 1769
+  },
+  {
+   "id": "S02",
+   "part": 1,
+   "from": 2353,
+   "dur": 1791,
+   "audioFrom": 20,
+   "audio": 1726
+  },
+  {
+   "id": "S03",
+   "part": 1,
+   "from": 4144,
+   "dur": 1643,
+   "audioFrom": 20,
+   "audio": 1503
+  },
+  {
+   "id": "S04",
+   "part": 1,
+   "from": 5787,
+   "dur": 1088,
+   "audioFrom": 20,
+   "audio": 1023
+  },
+  {
+   "id": "S05",
+   "part": 1,
+   "from": 6875,
+   "dur": 1035,
+   "audioFrom": 20,
+   "audio": 970
+  },
+  {
+   "id": "S06",
+   "part": 1,
+   "from": 7910,
+   "dur": 1177,
+   "audioFrom": 20,
+   "audio": 1112
+  },
+  {
+   "id": "S07",
+   "part": 1,
+   "from": 9087,
+   "dur": 1299,
+   "audioFrom": 20,
+   "audio": 1234
+  },
+  {
+   "id": "S08",
+   "part": 1,
+   "from": 10386,
+   "dur": 685,
+   "audioFrom": 20,
+   "audio": 620
+  },
+  {
+   "id": "T08",
+   "part": 1,
+   "from": 11071,
+   "dur": 150,
+   "audioFrom": 0,
+   "audio": 0
+  }
+ ]
+}

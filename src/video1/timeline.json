@@ -1,0 +1,111 @@
+{
+ "fps": 30,
+ "rate": 1,
+ "total": 5918,
+ "segments": [
+  {
+   "id": "M00",
+   "part": 0,
+   "from": 0,
+   "dur": 442,
+   "audioFrom": 20,
+   "audio": 377
+  },
+  {
+   "id": "M01",
+   "part": 0,
+   "from": 442,
+   "dur": 867,
+   "audioFrom": 20,
+   "audio": 802
+  },
+  {
+   "id": "M02",
+   "part": 0,
+   "from": 1309,
+   "dur": 483,
+   "audioFrom": 20,
+   "audio": 418
+  },
+  {
+   "id": "M31",
+   "part": 0,
+   "from": 1792,
+   "dur": 435,
+   "audioFrom": 20,
+   "audio": 370
+  },
+  {
+   "id": "M32",
+   "part": 0,
+   "from": 2227,
+   "dur": 416,
+   "audioFrom": 20,
+   "audio": 351
+  },
+  {
+   "id": "M33",
+   "part": 0,
+   "from": 2643,
+   "dur": 394,
+   "audioFrom": 20,
+   "audio": 329
+  },
+  {
+   "id": "M34",
+   "part": 0,
+   "from": 3037,
+   "dur": 351,
+   "audioFrom": 20,
+   "audio": 286
+  },
+  {
+   "id": "M35",
+   "part": 0,
+   "from": 3388,
+   "dur": 351,
+   "audioFrom": 20,
+   "audio": 286
+  },
+  {
+   "id": "M36",
+   "part": 0,
+   "from": 3739,
+   "dur": 334,
+   "audioFrom": 20,
+   "audio": 269
+  },
+  {
+   "id": "M37",
+   "part": 0,
+   "from": 4073,
+   "dur": 289,
+   "audioFrom": 20,
+   "audio": 224
+  },
+  {
+   "id": "M38",
+   "part": 0,
+   "from": 4362,
+   "dur": 212,
+   "audioFrom": 20,
+   "audio": 147
+  },
+  {
+   "id": "M04",
+   "part": 0,
+   "from": 4574,
+   "dur": 937,
+   "audioFrom": 20,
+   "audio": 812
+  },
+  {
+   "id": "M05",
+   "part": 0,
+   "from": 5511,
+   "dur": 407,
+   "audioFrom": 20,
+   "audio": 267
+  }
+ ]
+}

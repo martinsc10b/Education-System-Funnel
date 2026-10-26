@@ -6,10 +6,11 @@ Videos explicativos para el Consorcio Educativo San Pío X: cómo el Currículo 
 
 | Video | Archivo | Duración | Estado |
 |---|---|---|---|
-| Video 1 · El mapa | [`out/video-1-mapa-v1.mp4`](out/video-1-mapa-v1.mp4) | 3:17 | Construido, por aprobar |
-| Video del caso v4 · Álgebra 4.°, semana 26 | [`out/la-vena-completo-v4.mp4`](out/la-vena-completo-v4.mp4) | 10:42 | Completo; base para Video 2 |
+| Video 1 · ¿Cómo entendemos nuestra labor pedagógica? (v5) | [`out/VIDEO-1_Labor-pedagogica-v5.mp4`](out/VIDEO-1_Labor-pedagogica-v5.mp4) | 2:28 | Versión actual |
 | Video 2 · Una clase real | — | — | Guion pendiente |
-| Versión anterior (v3, partes 0–1) | [`archive/v3/la-vena-parte-0-1.mp4`](archive/v3/la-vena-parte-0-1.mp4) | 6:14 | Reemplazada por v4 |
+| Versión anterior (v3, partes 0–1) | [`archive/v3/la-vena-parte-0-1.mp4`](archive/v3/la-vena-parte-0-1.mp4) | 6:14 | Archivo histórico |
+
+La versión v5 se incorporó como video final proporcionado. Los videos anteriores de `out/` se retiraron; el código Remotion y los guiones anteriores se conservan como referencia histórica.
 
 ## Guiones y resúmenes
 
@@ -41,7 +42,9 @@ briefs/            guiones, resúmenes y respuestas
 archive/v3/        versión anterior del video del caso
 ```
 
-## Cómo reconstruir
+## Cómo reconstruir las versiones anteriores
+
+Estos comandos corresponden al código Remotion histórico; no reconstruyen el video v5 proporcionado.
 
 ```bash
 npm install

@@ -1,4 +1,4 @@
-// Scene illustrations for the right 70 % of the frame, one per narration clip (V00–V10).
+// Scene illustrations for the right 60 % of the frame, one per narration clip (V00–V10).
 // Every reveal is cued from the real word timings: cue("word") is the local frame where that word is spoken.
 import React from "react";
 import { interpolate, useCurrentFrame } from "remotion";
@@ -57,13 +57,26 @@ const V00: React.FC<SceneProps> = ({ cue }) => {
 // ── 1 · Currículo Nacional ──────────────────────────────────────────────────────
 const V01: React.FC<SceneProps> = ({ cue }) => {
   const f = useCurrentFrame();
-  const tCard = fade(f, cue("ejemplo"), 12);
+  const tCard = fade(f, cue("ejemplo"), 12), t31 = fade(f, cue("treinta"), 12);
+  const TAGS: [string, string, number, number][] = [["Ministerio", "Ministerio", 70, 150], ["DRE", "dirección", 150, 238], ["UGEL", "UGEL", 96, 318]];
   return (
     <>
       <Title eyebrow="01 · EL MARCO COMÚN" title="Currículo Nacional" />
       <Abs x={L.sceneX + 40} y={L.bodyY} o={fade(f, 3, 14)} dy={16}><Peru w={300} /></Abs>
+      {TAGS.map(([label, word, x, y]) => {
+        const t = fade(f, cue(word), 10);
+        return (
+          <Abs key={label} x={L.sceneX + x} y={L.bodyY + y} o={t} style={{ transform: `scale(${0.7 + 0.3 * t})`, transformOrigin: "left center" }}>
+            <Tag color={K.navy} bg="#fff" style={{ fontSize: 22, boxShadow: "0 6px 16px rgba(0,0,0,0.18)" }}>{label}</Tag>
+          </Abs>
+        );
+      })}
       <Abs x={L.sceneX + 150} y={L.bodyY + 400} o={fade(f, cue("Perú"), 10)} style={{ fontFamily: SANS, fontSize: 22, fontWeight: 800, letterSpacing: 3, color: K.navy }}>PERÚ</Abs>
-      <Abs x={L.sceneX + 420} y={L.bodyY + 90} o={tCard} dy={20}>
+      <Abs x={L.sceneX + 420} y={L.bodyY + 10} o={t31} dy={14} style={{ fontFamily: SANS, display: "flex", alignItems: "baseline", gap: 14 }}>
+        <div style={{ fontSize: 96, fontWeight: 800, color: K.orange, fontVariantNumeric: "tabular-nums" }}>{Math.round(31 * fade(f, cue("treinta"), 24))}</div>
+        <div style={{ fontSize: 36, fontWeight: 800, color: K.navy }}>competencias</div>
+      </Abs>
+      <Abs x={L.sceneX + 420} y={L.bodyY + 170} o={tCard} dy={20}>
         <Card style={{ width: 480, padding: "26px 30px" }}>
           <Tag color={K.orange} bg="#FFE9DC" style={{ fontSize: 16, letterSpacing: 1.5 }}>COMPETENCIA</Tag>
           <div style={{ fontSize: 34, fontWeight: 800, lineHeight: 1.22, marginTop: 16, color: K.navy }}>Resuelve problemas de regularidad, equivalencia y cambio</div>
@@ -87,7 +100,7 @@ const V02: React.FC<SceneProps> = ({ cue }) => {
       </Abs>
       <Abs x={L.sceneX + 610} y={L.bodyY + 30} o={tPat} dy={18}>
         <Card style={{ width: 290, padding: 18 }}>
-          <div style={{ background: K.navy, color: "#fff", borderRadius: 10, padding: "10px 0", textAlign: "center", fontSize: 26, fontWeight: 800 }}>PAT 2027</div>
+          <div style={{ background: K.navy, color: "#fff", borderRadius: 10, padding: "10px 0", textAlign: "center", fontSize: 24, fontWeight: 800 }}>Año escolar 2027</div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginTop: 12 }}>
             {["I", "II", "III", "IV"].map((b, i) => (
               <div key={b} style={{ opacity: fade(f, cue("PAT") + 6 + i * 4, 8), background: K.soft, borderRadius: 10, padding: "12px 0", textAlign: "center" }}>
@@ -138,8 +151,8 @@ const V03: React.FC<SceneProps> = ({ cue }) => {
 // ── 4 · Programación anual ──────────────────────────────────────────────────────
 const V04: React.FC<SceneProps> = ({ cue }) => {
   const f = useCurrentFrame();
-  const CELL = 32, x0 = L.sceneX, y0 = L.bodyY + 150;
-  const tLin = fade(f, cue("lineales"), 10), t26 = fade(f, cue("veintiséis"), 10);
+  const CELL = 28, x0 = L.sceneX, y0 = L.bodyY + 150;
+  const tLin = fade(f, cue("después"), 10), t26 = fade(f, cue("veintiséis"), 10);
   const fill = (w: number) => (w === 26 && t26 > 0 ? K.orange : w >= 22 && w <= 25 && tLin > 0 ? K.navy : "#DDE4EB");
   return (
     <>
@@ -168,18 +181,18 @@ const V04: React.FC<SceneProps> = ({ cue }) => {
 const V05: React.FC<SceneProps> = ({ cue }) => {
   const f = useCurrentFrame();
   const UNITS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
-  const t6 = fade(f, cue("seis"), 12), tCrit = cue("criterios");
+  const t6 = fade(f, cue("seis"), 12), tCrit = cue("criterios"), tBim = cue("bimestres"), tUni = cue("unidades");
   return (
     <>
       <Title eyebrow="05 · EL RETO DE LA UNIDAD" title="Unidad didáctica" />
       {[0, 1, 2, 3].map((b) => (
-        <Abs key={b} x={L.sceneX + b * 262} y={L.bodyY} o={fade(f, 3 + b * 5, 10)} style={{ fontFamily: SANS }}>
+        <Abs key={b} x={L.sceneX + b * 262} y={L.bodyY} o={fade(f, tBim - 6 + b * 4, 10)} style={{ fontFamily: SANS }}>
           <div style={{ fontSize: 16, fontWeight: 700, letterSpacing: 1.5, color: K.gray, marginBottom: 10 }}>BIMESTRE {b + 1}</div>
           <div style={{ display: "flex", gap: 10 }}>
             {[0, 1].map((k) => {
               const u = b * 2 + k, big = u === 5 ? t6 : 0;
               return (
-                <div key={u} style={{ width: 108, height: 72, borderRadius: 12, background: big > 0 ? `rgba(255,106,20,${big})` : K.navy, opacity: u === 5 ? 1 : 1 - 0.55 * t6, color: "#fff", fontSize: 28, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${1 + 0.18 * big})`, boxShadow: big ? `0 10px 26px rgba(255,106,20,${0.4 * big})` : "none" }}>{UNITS[u]}</div>
+                <div key={u} style={{ opacity: fade(f, tUni + u * 2, 8) * (u === 5 ? 1 : 1 - 0.55 * t6), width: 108, height: 72, borderRadius: 12, background: big > 0 ? `rgba(255,106,20,${big})` : K.navy, color: "#fff", fontSize: 28, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${1 + 0.18 * big})`, boxShadow: big ? `0 10px 26px rgba(255,106,20,${0.4 * big})` : "none" }}>{UNITS[u]}</div>
               );
             })}
           </div>
@@ -208,11 +221,11 @@ const Exercise: React.FC = () => (
       <div style={{ fontSize: 96, fontWeight: 200, color: K.navy, lineHeight: 0.8 }}>{"{"}</div>
       <div><Eq size={36}>x + y = 7</Eq><Eq size={36}>2x − y = 5</Eq></div>
     </div>
-    <div style={{ display: "flex", gap: 30, marginTop: 22 }}>
-      <Eq size={26} color={K.gray}>x = ______</Eq>
-      <Eq size={26} color={K.gray}>y = ______</Eq>
+    <div style={{ fontSize: 21, fontWeight: 600, color: K.ink, marginTop: 20, lineHeight: 1.45 }}>
+      <div><b style={{ color: K.orange }}>a)</b> Resuelve por reducción.</div>
+      <div><b style={{ color: K.orange }}>b)</b> Comprueba tu resultado en las dos ecuaciones.</div>
+      <div><b style={{ color: K.orange }}>c)</b> ¿Es compatible o incompatible? Explica.</div>
     </div>
-    <div style={{ fontSize: 22, fontWeight: 600, color: K.gray, marginTop: 16 }}>Tipo de sistema: ____________</div>
   </div>
 );
 const V06: React.FC<SceneProps> = ({ cue }) => {
@@ -230,6 +243,7 @@ const V06: React.FC<SceneProps> = ({ cue }) => {
             <div style={{ fontSize: 46, fontWeight: 800, marginTop: 12, color: K.navy, display: "inline-block", padding: "0 10px", marginLeft: -10, borderRadius: 10, background: `rgba(255,106,20,${0.18 * tW})` }}>Semana 26</div>
             <div style={{ fontSize: 34, fontWeight: 700, color: K.ink, marginTop: 6 }}>Sistemas de ecuaciones</div>
             <div style={{ marginTop: 22 }}><Tag color={K.orange} bg="#FFE9DC">4.° A</Tag></div>
+            <div style={{ position: "absolute", left: 30, bottom: 26, opacity: fade(f, cue("dos"), 10) }}><Tag color="#fff" bg={K.navy}>Se entrega dos veces al año</Tag></div>
           </div>
           <div style={{ flex: 1.15, background: "#fff", borderRadius: "4px 12px 12px 4px", padding: "26px 30px", boxSizing: "border-box", position: "relative" }}>
             <Exercise />
@@ -266,8 +280,8 @@ const V07: React.FC<SceneProps> = ({ cue }) => {
 const Graph: React.FC<{ t: number }> = ({ t }) => (
   <svg width="250" height="190" viewBox="0 0 250 190">
     {Array.from({ length: 6 }, (_, i) => Array.from({ length: 5 }, (_, j) => <circle key={`${i}${j}`} cx={20 + i * 42} cy={15 + j * 40} r="2.5" fill="#5D7A99" />))}
-    <line x1="20" y1="150" x2={20 + 200 * t} y2={150 - 130 * t} stroke="#fff" strokeWidth="5" strokeLinecap="round" />
-    <line x1="60" y1="180" x2={60 + 180 * t} y2={180 - 117 * t} stroke={K.orange} strokeWidth="5" strokeLinecap="round" />
+    <path d={`M20 150 L${20 + 200 * t} ${150 - 130 * t}`} stroke="#fff" strokeWidth="5" strokeLinecap="round" />
+    <path d={`M60 180 L${60 + 180 * t} ${180 - 117 * t}`} stroke={K.orange} strokeWidth="5" strokeLinecap="round" />
   </svg>
 );
 const V08: React.FC<SceneProps> = ({ cue }) => {

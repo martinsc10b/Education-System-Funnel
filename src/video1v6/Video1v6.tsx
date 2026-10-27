@@ -1,11 +1,13 @@
-// Video 1 v6 · «¿Cómo entendemos nuestra labor pedagógica?». Down the eight stages (navy) and back up (orange).
-// Persistent layers (header, stages, mini classroom) follow the global frame; each scene crossfades for 0.3 s.
+// Video 1 v6 · «¿Cómo entendemos nuestra labor pedagógica?». Down the funnel (navy) and back up (orange).
+// Persistent layers (header, funnel, mini classroom) follow the global frame; each scene crossfades for 0.3 s.
+// Scenes are drawn in a 900-wide box and scaled into the right 60 % of the frame.
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { mixHex } from "../shared/theme";
 import { Room } from "./art";
+import { Funnel, FunnelState, frontOf, THETA_END } from "./Funnel";
 import { SCENES } from "./scenes";
-import { fade, K, L, NAMES, SANS } from "./theme";
+import { fade, K, L, SANS } from "./theme";
 import timeline from "./timeline.json";
 import captions from "./captions.json";
 
@@ -28,36 +30,51 @@ const cueIn = (id: string) => (needle: string, nth = 0) => {
 };
 const gcue = (id: string, needle: string, nth = 0) => SEG[id].from + cueIn(id)(needle, nth);
 
-// Stage fill over the whole video: 0 = gray, navy when the descent reaches it, orange when the ascent does.
+// Descent: the navy point reaches ring i as the narration names it, lingers on the ring's front face while
+// that ring is narrated, and goes round the back just before the next name. Ascent: the orange point climbs
+// from the tip to the top rim between «sube» and «Currículo».
+const RING_CUES = [gcue("V01", "Currículo"), gcue("V02", "PEI"), gcue("V03", "PCI"), gcue("V04", "programación"), gcue("V05", "unidades"), gcue("V06", "cuaderno"), gcue("V07", "sesión"), gcue("V08", "Bruno")];
+const LAND = gcue("V08", "aterrizan");
+const SWING = 0.6 * Math.PI;
+const DOWN_KEYS: [number, number][] = [[SEG.V01.from, 0]];
+RING_CUES.forEach((c, k) => {
+  const i = k + 1, next = RING_CUES[k + 1] ?? LAND;
+  DOWN_KEYS.push([c, frontOf(i) - SWING], [next - Math.min(45, Math.round((next - c) * 0.3)), frontOf(i) + SWING]);
+});
+DOWN_KEYS.push([LAND + 20, THETA_END]);
 const ASC0 = gcue("V09", "sube"), ASC1 = gcue("V09", "Currículo");
-const stageFill = (i: number, g: number) => {
-  const down = fade(g, SEG[`V0${i}`].from, XF);
-  const up = fade(g, ASC0 + ((8 - i) / 7) * (ASC1 - ASC0), XF);
-  return { down, up, color: mixHex(mixHex(K.tile, K.navy, down), K.orange, up) };
-};
+const thetaAt = (g: number) => g < SEG.V09.from
+  ? interpolate(g, DOWN_KEYS.map((k) => k[0]), DOWN_KEYS.map((k) => k[1]), { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.sin) })
+  : interpolate(g, [ASC0, ASC1], [THETA_END, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+// Frame at which the ascent enters ring i (from below).
+const upAt = (i: number) => ASC0 + ((THETA_END - 2 * Math.PI * i) / THETA_END) * (ASC1 - ASC0);
 const PAT_AT = gcue("V02", "PAT");
+const OPEN_DIM = gcue("V00", "Veamos"), LEAD = gcue("V03", "Estas"), TEACH_DIM = gcue("V04", "docentes"), BOTH = gcue("V10", "dos");
+
+const funnelState = (g: number): FunnelState => {
+  const theta = thetaAt(g);
+  const ascent = g >= SEG.V09.from, close = g >= SEG.V10.from;
+  const open = fade(g, 6, 12) * (1 - fade(g, OPEN_DIM, 15));
+  const both = fade(g, BOTH, 12);
+  return {
+    ring: RING_CUES.map((c, k) => ({ down: fade(g, c, XF), up: ascent ? fade(g, k === 7 ? ASC0 : upAt(k + 1), XF) : 0 })),
+    bands: [
+      Math.max(open, both, fade(g, LEAD, 12) * (1 - fade(g, SEG.V04.from, 12))),
+      Math.max(open, both, fade(g, SEG.V04.from, 12) * (1 - fade(g, TEACH_DIM, 15))),
+    ],
+    bandColor: close ? K.orange : K.navy,
+    paths: close ? [{ from: 0, to: THETA_END, color: K.orange }]
+      : ascent ? [{ from: 0, to: THETA_END, color: K.navy }, { from: theta, to: THETA_END, color: K.orange }]
+      : g >= SEG.V01.from ? [{ from: 0, to: theta, color: K.navy }] : [],
+    point: g < SEG.V01.from ? null : { theta, color: ascent ? K.orange : K.navy, o: fade(g, SEG.V01.from, 12) * (1 - fade(g, SEG.V10.from, 12)) },
+    pat: fade(g, PAT_AT, 10),
+  };
+};
 
 const Header: React.FC = () => (
   <>
     <div style={{ position: "absolute", left: 64, top: 46, fontFamily: SANS, fontSize: 26, fontWeight: 500, color: K.navy }}>Una clase real · Álgebra · 4.° de secundaria · Semana 26</div>
     <div style={{ position: "absolute", right: 64, top: 40, fontFamily: SANS, fontSize: 20, fontWeight: 800, letterSpacing: 1, color: "#fff", background: K.navy, borderRadius: 10, padding: "8px 18px" }}>VIDEO 1</div>
-  </>
-);
-
-const Stages: React.FC<{ g: number }> = ({ g }) => (
-  <>
-    {NAMES.map((name, k) => {
-      const i = k + 1;
-      const { down, up, color } = stageFill(i, g);
-      const on = Math.max(down, up) > 0.5;
-      return (
-        <div key={i} style={{ position: "absolute", left: L.stageX, top: L.stageY(i), width: L.stageW, height: L.stageH, borderRadius: 12, background: color, display: "flex", alignItems: "center", gap: 18, padding: "0 22px", boxSizing: "border-box", fontFamily: SANS, fontSize: 27, fontWeight: on ? 700 : 500, color: on ? "#fff" : K.gray }}>
-          <span style={{ fontWeight: 800, width: 18 }}>{i}</span>
-          <span style={{ flex: 1 }}>{name}</span>
-          {i === 2 && <span style={{ opacity: fade(g, PAT_AT, 10), transform: `scale(${0.8 + 0.2 * fade(g, PAT_AT, 10)})`, background: "#fff", color: up > 0.5 ? K.orange : K.navy, borderRadius: 8, padding: "4px 10px", fontSize: 17, fontWeight: 800 }}>PAT 2027</span>}
-        </div>
-      );
-    })}
   </>
 );
 
@@ -91,7 +108,7 @@ const chunk = (words: Word[]): Chunk[] => {
   words.forEach((w, i) => {
     cur.push(w);
     const len = cur.map((x) => x.text).join(" ").length;
-    if (/[.?!:;]["»]?$/.test(w.text) || (/,$/.test(w.text) && cur.length >= 5) || len >= 70 || !words[i + 1]) flush();
+    if (/[.?!:;]["»]?$/.test(w.text) || (/,$/.test(w.text) && cur.length >= 5) || (len >= 70 && w.text.length > 3) || len >= 86 || !words[i + 1]) flush();
   });
   flush();
   // A one- or two-word tail joins the chunk before it, so no subtitle shows a lone word.
@@ -121,7 +138,7 @@ const Scene: React.FC<{ seg: Seg; last: boolean }> = ({ seg, last }) => {
   const Comp = SCENES[seg.id];
   const o = (seg.from === 0 ? 1 : fade(f, 0, XF)) * (last ? 1 : 1 - fade(f, seg.dur, XF));
   return (
-    <AbsoluteFill style={{ opacity: o }}>
+    <AbsoluteFill style={{ opacity: o, transformOrigin: `${L.sceneX}px ${L.scene.oy}px`, transform: `translateX(${L.scene.dx}px) scale(${L.scene.s})` }}>
       <Comp cue={cueIn(seg.id)} dur={seg.dur} />
     </AbsoluteFill>
   );
@@ -139,7 +156,7 @@ const EndCard: React.FC = () => {
 
 const Persistent: React.FC = () => {
   const g = useCurrentFrame();
-  return (<><Header /><Stages g={g} /><MiniClass g={g} /></>);
+  return (<><Header /><Funnel s={funnelState(g)} /><MiniClass g={g} /></>);
 };
 
 export const Video1v6: React.FC = () => (

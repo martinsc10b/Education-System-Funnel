@@ -22,17 +22,15 @@ export const K = {
   soft: "#F1F4F7",
 };
 
-// Fixed geometry, 1920×1080. Left 30 % holds the eight stages; the right 70 % holds the scene.
+// Fixed geometry, 1920×1080. The funnel fills the left 40 %; scenes are laid out in a 900-wide box at sceneX
+// and scaled by scene.s around (sceneX, scene.oy), then shifted by scene.dx, so they land at x ≈ 810–1620.
 export const L = {
-  stageX: 64,
-  stageW: 470,
-  stageY: (i: number) => 150 + (i - 1) * 86, // i = 1..8
-  stageH: 68,
   sceneX: 640,
+  scene: { s: 0.9, oy: 120, dx: 170 },
   sceneW: 900,
   titleY: 132,
   bodyY: 262,
-  mini: { x: 1556, y: 676, w: 300, scale: 300 / 900 },
+  mini: { x: 1652, y: 792, w: 228, scale: 228 / 900 },
 };
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;

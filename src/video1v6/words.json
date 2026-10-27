@@ -154,138 +154,193 @@
  "V01": [
   {
    "text": "Todo",
-   "start": 0.06,
-   "end": 0.24
+   "start": 0.1,
+   "end": 0.28
   },
   {
    "text": "empieza",
-   "start": 0.28,
-   "end": 0.88
+   "start": 0.3,
+   "end": 0.92
   },
   {
    "text": "en",
-   "start": 0.94,
-   "end": 1
+   "start": 0.96,
+   "end": 1.04
   },
   {
    "text": "el",
-   "start": 1.04,
-   "end": 1.12
+   "start": 1.06,
+   "end": 1.14
   },
   {
    "text": "Currículo",
-   "start": 1.2,
-   "end": 1.7
+   "start": 1.24,
+   "end": 1.72
   },
   {
    "text": "Nacional.",
    "start": 1.78,
-   "end": 2.32
+   "end": 2.3
   },
   {
-   "text": "Ahí",
-   "start": 2.9,
-   "end": 3.36
+   "text": "El",
+   "start": 2.94,
+   "end": 3
   },
   {
-   "text": "el",
-   "start": 3.4,
-   "end": 3.5
+   "text": "Ministerio,",
+   "start": 3.06,
+   "end": 3.7
   },
   {
-   "text": "Ministerio",
-   "start": 3.54,
-   "end": 4.059
+   "text": "junto",
+   "start": 4,
+   "end": 4.26
   },
   {
-   "text": "define",
-   "start": 4.1,
-   "end": 4.54
+   "text": "con",
+   "start": 4.32,
+   "end": 4.42
   },
   {
-   "text": "lo",
-   "start": 4.58,
-   "end": 4.64
+   "text": "la",
+   "start": 4.44,
+   "end": 4.52
   },
   {
-   "text": "que",
-   "start": 4.72,
-   "end": 4.8
+   "text": "dirección",
+   "start": 4.54,
+   "end": 4.96
   },
   {
-   "text": "todo",
-   "start": 5,
-   "end": 5.2
-  },
-  {
-   "text": "estudiante",
-   "start": 5.24,
-   "end": 5.8
-  },
-  {
-   "text": "del",
-   "start": 5.84,
-   "end": 5.96
-  },
-  {
-   "text": "Perú",
-   "start": 6.04,
-   "end": 6.28
-  },
-  {
-   "text": "debe",
-   "start": 6.52,
-   "end": 6.7
-  },
-  {
-   "text": "aprender.",
-   "start": 6.74,
-   "end": 7.24
-  },
-  {
-   "text": "Por",
-   "start": 7.72,
-   "end": 7.8
-  },
-  {
-   "text": "ejemplo,",
-   "start": 7.84,
-   "end": 8.3
-  },
-  {
-   "text": "resolver",
-   "start": 8.74,
-   "end": 9.12
-  },
-  {
-   "text": "problemas",
-   "start": 9.22,
-   "end": 9.74
-  },
-  {
-   "text": "de",
-   "start": 9.76,
-   "end": 9.84
-  },
-  {
-   "text": "regularidad,",
-   "start": 9.9,
-   "end": 10.68
-  },
-  {
-   "text": "equivalencia",
-   "start": 10.92,
-   "end": 11.82
+   "text": "regional",
+   "start": 5.04,
+   "end": 5.56
   },
   {
    "text": "y",
-   "start": 11.88,
-   "end": 11.9
+   "start": 5.66,
+   "end": 5.7
+  },
+  {
+   "text": "la",
+   "start": 5.76,
+   "end": 5.82
+  },
+  {
+   "text": "UGEL,",
+   "start": 5.9,
+   "end": 6.26
+  },
+  {
+   "text": "define",
+   "start": 6.76,
+   "end": 7.1
+  },
+  {
+   "text": "las",
+   "start": 7.14,
+   "end": 7.28
+  },
+  {
+   "text": "treinta",
+   "start": 7.5,
+   "end": 7.679666666666667
+  },
+  {
+   "text": "y",
+   "start": 7.679666666666667,
+   "end": 7.859333333333333
+  },
+  {
+   "text": "una",
+   "start": 7.859333333333333,
+   "end": 8.039
+  },
+  {
+   "text": "competencias",
+   "start": 8.06,
+   "end": 8.84
+  },
+  {
+   "text": "que",
+   "start": 8.94,
+   "end": 9
+  },
+  {
+   "text": "todo",
+   "start": 9.24,
+   "end": 9.44
+  },
+  {
+   "text": "estudiante",
+   "start": 9.48,
+   "end": 10.04
+  },
+  {
+   "text": "del",
+   "start": 10.08,
+   "end": 10.18
+  },
+  {
+   "text": "Perú",
+   "start": 10.28,
+   "end": 10.52
+  },
+  {
+   "text": "debe",
+   "start": 10.76,
+   "end": 10.96
+  },
+  {
+   "text": "desarrollar.",
+   "start": 11,
+   "end": 11.66
+  },
+  {
+   "text": "Por",
+   "start": 12.2,
+   "end": 12.28
+  },
+  {
+   "text": "ejemplo,",
+   "start": 12.32,
+   "end": 12.8
+  },
+  {
+   "text": "resolver",
+   "start": 13.34,
+   "end": 13.82
+  },
+  {
+   "text": "problemas",
+   "start": 13.84,
+   "end": 14.34
+  },
+  {
+   "text": "de",
+   "start": 14.36,
+   "end": 14.44
+  },
+  {
+   "text": "regularidad,",
+   "start": 14.5,
+   "end": 15.26
+  },
+  {
+   "text": "equivalencia",
+   "start": 15.52,
+   "end": 16.34
+  },
+  {
+   "text": "y",
+   "start": 16.5,
+   "end": 16.54
   },
   {
    "text": "cambio.",
-   "start": 12.02,
-   "end": 12.42
+   "start": 16.66,
+   "end": 17.06
   }
  ],
  "V02": [
@@ -498,306 +553,376 @@
  "V03": [
   {
    "text": "El",
-   "start": 0.14,
-   "end": 0.24
+   "start": 0.08,
+   "end": 0.16
   },
   {
    "text": "PCI",
-   "start": 0.42,
-   "end": 1.62
+   "start": 0.34,
+   "end": 1.64
   },
   {
    "text": "baja",
-   "start": 2.1,
-   "end": 2.34
+   "start": 2.22,
+   "end": 2.5
   },
   {
    "text": "esas",
-   "start": 2.38,
-   "end": 2.66
+   "start": 2.52,
+   "end": 2.78
   },
   {
    "text": "metas",
-   "start": 2.68,
-   "end": 3.04
+   "start": 2.84,
+   "end": 3.22
   },
   {
    "text": "a",
-   "start": 3.08,
-   "end": 3.16
+   "start": 3.32,
+   "end": 3.38
   },
   {
    "text": "decisiones",
-   "start": 3.18,
-   "end": 3.7
+   "start": 3.42,
+   "end": 4
   },
   {
    "text": "pedagógicas:",
-   "start": 3.78,
-   "end": 4.6
+   "start": 4.08,
+   "end": 4.88
   },
   {
    "text": "qué",
-   "start": 5.16,
-   "end": 5.28
+   "start": 5.46,
+   "end": 5.58
   },
   {
    "text": "competencias",
-   "start": 5.32,
-   "end": 5.92
+   "start": 5.62,
+   "end": 6.22
   },
   {
    "text": "priorizar,",
-   "start": 6,
-   "end": 6.58
+   "start": 6.32,
+   "end": 6.88
   },
   {
    "text": "con",
-   "start": 6.94,
-   "end": 7.08
+   "start": 7.28,
+   "end": 7.42
   },
   {
    "text": "qué",
-   "start": 7.18,
-   "end": 7.26
+   "start": 7.54,
+   "end": 7.62
   },
   {
    "text": "enfoque",
-   "start": 7.3,
-   "end": 7.68
+   "start": 7.66,
+   "end": 8.08
   },
   {
    "text": "enseñar,",
-   "start": 7.72,
-   "end": 8.24
+   "start": 8.119,
+   "end": 8.64
   },
   {
    "text": "cuántas",
-   "start": 8.76,
-   "end": 9.14
+   "start": 9.18,
+   "end": 9.6
   },
   {
    "text": "horas",
-   "start": 9.16,
-   "end": 9.4
+   "start": 9.62,
+   "end": 9.88
   },
   {
    "text": "dedicar",
-   "start": 9.42,
-   "end": 9.82
-  },
-  {
-   "text": "a",
-   "start": 9.86,
-   "end": 9.9
-  },
-  {
-   "text": "cada",
-   "start": 10.02,
+   "start": 9.92,
    "end": 10.3
   },
   {
+   "text": "a",
+   "start": 10.34,
+   "end": 10.36
+  },
+  {
+   "text": "cada",
+   "start": 10.5,
+   "end": 10.76
+  },
+  {
    "text": "área",
-   "start": 10.4,
-   "end": 10.66
+   "start": 10.86,
+   "end": 11.1
   },
   {
    "text": "y",
-   "start": 10.84,
-   "end": 10.88
+   "start": 11.3,
+   "end": 11.34
   },
   {
    "text": "cómo",
-   "start": 11.06,
-   "end": 11.3
+   "start": 11.52,
+   "end": 11.78
   },
   {
    "text": "evaluar.",
-   "start": 11.34,
-   "end": 11.76
+   "start": 11.82,
+   "end": 12.28
+  },
+  {
+   "text": "Estas",
+   "start": 13.04,
+   "end": 13.32
+  },
+  {
+   "text": "tres",
+   "start": 13.36,
+   "end": 13.54
+  },
+  {
+   "text": "capas",
+   "start": 13.66,
+   "end": 14.02
+  },
+  {
+   "text": "forman",
+   "start": 14.18,
+   "end": 14.48
+  },
+  {
+   "text": "el",
+   "start": 14.52,
+   "end": 14.64
+  },
+  {
+   "text": "sistema",
+   "start": 14.68,
+   "end": 15.16
+  },
+  {
+   "text": "de",
+   "start": 15.2,
+   "end": 15.28
+  },
+  {
+   "text": "liderazgo.",
+   "start": 15.32,
+   "end": 15.9
   }
  ],
  "V04": [
   {
-   "text": "Con",
-   "start": 0.1,
-   "end": 0.24
+   "text": "Aquí",
+   "start": 0.08,
+   "end": 0.3
   },
   {
-   "text": "eso,",
+   "text": "empieza",
    "start": 0.32,
-   "end": 0.6
+   "end": 0.78
   },
   {
-   "text": "los",
-   "start": 0.88,
-   "end": 1
+   "text": "el",
+   "start": 0.82,
+   "end": 0.88
   },
   {
-   "text": "docentes",
-   "start": 1.02,
-   "end": 1.44
+   "text": "sistema",
+   "start": 0.94,
+   "end": 1.36
   },
   {
    "text": "de",
-   "start": 1.46,
-   "end": 1.52
+   "start": 1.42,
+   "end": 1.46
   },
   {
-   "text": "Matemática",
-   "start": 1.58,
+   "text": "enseñanza",
+   "start": 1.5,
    "end": 2.22
   },
   {
-   "text": "preparan",
-   "start": 2.32,
-   "end": 2.76
-  },
-  {
-   "text": "la",
-   "start": 2.78,
-   "end": 2.84
-  },
-  {
-   "text": "programación",
-   "start": 2.9,
-   "end": 3.52
-  },
-  {
-   "text": "anual:",
-   "start": 3.56,
-   "end": 3.96
-  },
-  {
-   "text": "qué",
-   "start": 4.56,
-   "end": 4.7
-  },
-  {
-   "text": "se",
-   "start": 4.74,
-   "end": 4.8
-  },
-  {
-   "text": "enseña",
-   "start": 4.84,
-   "end": 5.28
-  },
-  {
-   "text": "cada",
-   "start": 5.4,
-   "end": 5.6
-  },
-  {
-   "text": "semana",
-   "start": 5.7,
-   "end": 6.24
-  },
-  {
    "text": "y",
-   "start": 6.3,
-   "end": 6.34
+   "start": 2.24,
+   "end": 2.28
   },
   {
-   "text": "en",
-   "start": 6.4,
-   "end": 6.5
-  },
-  {
-   "text": "qué",
-   "start": 6.58,
-   "end": 6.72
-  },
-  {
-   "text": "orden.",
-   "start": 6.82,
-   "end": 7.16
+   "text": "aprendizaje.",
+   "start": 2.32,
+   "end": 3.08
   },
   {
    "text": "Los",
-   "start": 7.86,
-   "end": 7.96
+   "start": 3.72,
+   "end": 3.82
   },
   {
-   "text": "sistemas",
-   "start": 8,
-   "end": 8.38
+   "text": "docentes",
+   "start": 3.86,
+   "end": 4.3
   },
   {
    "text": "de",
-   "start": 8.42,
-   "end": 8.46
+   "start": 4.32,
+   "end": 4.38
   },
   {
-   "text": "ecuaciones",
-   "start": 8.5,
-   "end": 9.16
+   "text": "Matemática",
+   "start": 4.42,
+   "end": 5.08
   },
   {
-   "text": "llegan",
-   "start": 9.34,
-   "end": 9.62
-  },
-  {
-   "text": "en",
-   "start": 9.66,
-   "end": 9.72
+   "text": "preparan",
+   "start": 5.22,
+   "end": 5.64
   },
   {
    "text": "la",
-   "start": 9.76,
-   "end": 9.82
+   "start": 5.68,
+   "end": 5.72
+  },
+  {
+   "text": "programación",
+   "start": 5.8,
+   "end": 6.42
+  },
+  {
+   "text": "anual:",
+   "start": 6.46,
+   "end": 6.82
+  },
+  {
+   "text": "qué",
+   "start": 7.4,
+   "end": 7.54
+  },
+  {
+   "text": "se",
+   "start": 7.58,
+   "end": 7.66
+  },
+  {
+   "text": "enseña",
+   "start": 7.7,
+   "end": 8.14
+  },
+  {
+   "text": "cada",
+   "start": 8.28,
+   "end": 8.48
   },
   {
    "text": "semana",
-   "start": 9.9,
-   "end": 10.22
+   "start": 8.58,
+   "end": 9.02
   },
   {
-   "text": "veintiséis,",
-   "start": 10.36,
-   "end": 11
+   "text": "y",
+   "start": 9.2,
+   "end": 9.24
   },
   {
-   "text": "justo",
-   "start": 11.44,
-   "end": 11.78
+   "text": "en",
+   "start": 9.28,
+   "end": 9.38
   },
   {
-   "text": "después",
-   "start": 11.82,
-   "end": 12.2
+   "text": "qué",
+   "start": 9.48,
+   "end": 9.62
+  },
+  {
+   "text": "orden.",
+   "start": 9.66,
+   "end": 10.04
+  },
+  {
+   "text": "Los",
+   "start": 10.66,
+   "end": 10.74
+  },
+  {
+   "text": "sistemas",
+   "start": 10.78,
+   "end": 11.2
   },
   {
    "text": "de",
-   "start": 12.22,
-   "end": 12.28
-  },
-  {
-   "text": "las",
-   "start": 12.32,
-   "end": 12.42
+   "start": 11.22,
+   "end": 11.26
   },
   {
    "text": "ecuaciones",
-   "start": 12.48,
-   "end": 12.98
+   "start": 11.3,
+   "end": 11.92
+  },
+  {
+   "text": "llegan",
+   "start": 12.12,
+   "end": 12.4
+  },
+  {
+   "text": "en",
+   "start": 12.42,
+   "end": 12.5
+  },
+  {
+   "text": "la",
+   "start": 12.52,
+   "end": 12.58
+  },
+  {
+   "text": "semana",
+   "start": 12.66,
+   "end": 13
+  },
+  {
+   "text": "veintiséis,",
+   "start": 13.14,
+   "end": 13.78
+  },
+  {
+   "text": "justo",
+   "start": 14.14,
+   "end": 14.5
+  },
+  {
+   "text": "después",
+   "start": 14.54,
+   "end": 14.94
+  },
+  {
+   "text": "de",
+   "start": 14.96,
+   "end": 15.02
+  },
+  {
+   "text": "las",
+   "start": 15.06,
+   "end": 15.16
+  },
+  {
+   "text": "ecuaciones",
+   "start": 15.22,
+   "end": 15.72
   },
   {
    "text": "lineales.",
-   "start": 13,
-   "end": 13.68
+   "start": 15.78,
+   "end": 16.4
   }
  ],
  "V05": [
   {
    "text": "El",
-   "start": 0.06,
+   "start": 0.08,
    "end": 0.16
   },
   {
    "text": "año",
-   "start": 0.22,
+   "start": 0.24,
    "end": 0.42
   },
   {
@@ -807,305 +932,345 @@
   },
   {
    "text": "organiza",
-   "start": 0.6,
-   "end": 1.2
+   "start": 0.62,
+   "end": 1.06
   },
   {
    "text": "en",
-   "start": 1.24,
-   "end": 1.46
+   "start": 1.08,
+   "end": 1.16
+  },
+  {
+   "text": "cuatro",
+   "start": 1.32,
+   "end": 1.58
+  },
+  {
+   "text": "bimestres",
+   "start": 1.64,
+   "end": 2.24
+  },
+  {
+   "text": "y",
+   "start": 2.38,
+   "end": 2.44
   },
   {
    "text": "ocho",
-   "start": 1.52,
-   "end": 1.74
+   "start": 2.54,
+   "end": 2.74
   },
   {
    "text": "unidades,",
-   "start": 1.8,
-   "end": 2.46
+   "start": 2.84,
+   "end": 3.44
   },
   {
    "text": "cada",
-   "start": 2.8,
-   "end": 3.02
+   "start": 3.8,
+   "end": 4.04
   },
   {
    "text": "una",
-   "start": 3.14,
-   "end": 3.3
+   "start": 4.16,
+   "end": 4.32
   },
   {
    "text": "con",
-   "start": 3.42,
-   "end": 3.56
+   "start": 4.48,
+   "end": 4.62
   },
   {
    "text": "un",
-   "start": 3.6,
-   "end": 3.7
+   "start": 4.68,
+   "end": 4.76
   },
   {
    "text": "reto.",
-   "start": 3.78,
-   "end": 4.059
+   "start": 4.86,
+   "end": 5.18
   },
   {
    "text": "Esta",
-   "start": 4.66,
-   "end": 4.86
+   "start": 5.88,
+   "end": 6.08
   },
   {
    "text": "semana",
-   "start": 4.9,
-   "end": 5.38
+   "start": 6.12,
+   "end": 6.6
   },
   {
    "text": "está",
-   "start": 5.46,
-   "end": 5.68
+   "start": 6.68,
+   "end": 6.88
   },
   {
    "text": "en",
-   "start": 5.7,
-   "end": 5.78
+   "start": 6.9,
+   "end": 6.96
   },
   {
    "text": "la",
-   "start": 5.8,
-   "end": 5.86
+   "start": 7,
+   "end": 7.06
   },
   {
    "text": "unidad",
-   "start": 5.9,
-   "end": 6.28
+   "start": 7.1,
+   "end": 7.52
   },
   {
    "text": "seis,",
-   "start": 6.42,
-   "end": 6.8
+   "start": 7.6,
+   "end": 8
   },
   {
    "text": "\"Del",
-   "start": 7.32,
-   "end": 7.44
+   "start": 8.5,
+   "end": 8.62
   },
   {
    "text": "reto",
-   "start": 7.6,
-   "end": 7.96
+   "start": 8.78,
+   "end": 9.16
   },
   {
    "text": "al",
-   "start": 8.02,
-   "end": 8.1
+   "start": 9.22,
+   "end": 9.28
   },
   {
    "text": "aprendizaje:",
-   "start": 8.14,
-   "end": 8.92
+   "start": 9.34,
+   "end": 10.1
   },
   {
    "text": "Jugamos",
-   "start": 9.24,
-   "end": 9.84
+   "start": 10.48,
+   "end": 11.04
   },
   {
    "text": "para",
-   "start": 9.86,
-   "end": 10.06
+   "start": 11.06,
+   "end": 11.26
   },
   {
    "text": "crecer\",",
-   "start": 10.08,
-   "end": 10.48
+   "start": 11.3,
+   "end": 11.68
   },
   {
    "text": "que",
-   "start": 10.84,
-   "end": 10.92
+   "start": 12.24,
+   "end": 12.32
   },
   {
    "text": "define",
-   "start": 10.96,
-   "end": 11.32
+   "start": 12.34,
+   "end": 12.68
   },
   {
    "text": "los",
-   "start": 11.36,
-   "end": 11.46
+   "start": 12.72,
+   "end": 12.86
   },
   {
    "text": "criterios",
-   "start": 11.52,
-   "end": 12.08
+   "start": 12.9,
+   "end": 13.48
   },
   {
    "text": "para",
-   "start": 12.12,
-   "end": 12.26
+   "start": 13.52,
+   "end": 13.66
   },
   {
    "text": "mirar",
-   "start": 12.34,
-   "end": 12.56
+   "start": 13.74,
+   "end": 13.98
   },
   {
    "text": "el",
-   "start": 12.6,
-   "end": 12.7
+   "start": 14.02,
+   "end": 14.1
   },
   {
    "text": "trabajo",
-   "start": 12.74,
-   "end": 13.18
+   "start": 14.14,
+   "end": 14.58
   },
   {
    "text": "de",
-   "start": 13.22,
-   "end": 13.3
+   "start": 14.62,
+   "end": 14.68
   },
   {
    "text": "cada",
-   "start": 13.42,
-   "end": 13.62
+   "start": 14.82,
+   "end": 15
   },
   {
    "text": "estudiante.",
-   "start": 13.66,
-   "end": 14.3
+   "start": 15.04,
+   "end": 15.7
   }
  ],
  "V06": [
   {
    "text": "El",
    "start": 0.08,
-   "end": 0.14
+   "end": 0.18
   },
   {
    "text": "colegio",
    "start": 0.2,
-   "end": 0.58
+   "end": 0.6
   },
   {
    "text": "elabora",
-   "start": 0.62,
-   "end": 1.16
-  },
-  {
-   "text": "y",
-   "start": 1.26,
-   "end": 1.3
-  },
-  {
-   "text": "entrega",
-   "start": 1.36,
-   "end": 1.78
+   "start": 0.64,
+   "end": 1
   },
   {
    "text": "el",
-   "start": 1.8,
-   "end": 1.86
+   "start": 1.04,
+   "end": 1.08
   },
   {
    "text": "cuaderno",
-   "start": 1.94,
-   "end": 2.36
+   "start": 1.16,
+   "end": 1.56
   },
   {
    "text": "de",
-   "start": 2.38,
-   "end": 2.44
+   "start": 1.58,
+   "end": 1.64
   },
   {
-   "text": "trabajo,",
-   "start": 2.5,
-   "end": 2.98
-  },
-  {
-   "text": "como",
-   "start": 3.22,
-   "end": 3.4
-  },
-  {
-   "text": "parte",
-   "start": 3.54,
-   "end": 3.86
-  },
-  {
-   "text": "de",
-   "start": 3.88,
-   "end": 3.94
-  },
-  {
-   "text": "su",
-   "start": 4.019,
-   "end": 4.08
-  },
-  {
-   "text": "propuesta",
-   "start": 4.16,
-   "end": 4.64
-  },
-  {
-   "text": "de",
-   "start": 4.68,
-   "end": 4.74
-  },
-  {
-   "text": "valor.",
-   "start": 4.78,
-   "end": 5.12
-  },
-  {
-   "text": "Sigue",
-   "start": 5.74,
-   "end": 5.94
-  },
-  {
-   "text": "la",
-   "start": 6,
-   "end": 6.06
-  },
-  {
-   "text": "misma",
-   "start": 6.16,
-   "end": 6.42
-  },
-  {
-   "text": "secuencia:",
-   "start": 6.5,
-   "end": 7.06
-  },
-  {
-   "text": "página",
-   "start": 7.52,
-   "end": 7.8
-  },
-  {
-   "text": "ochenta",
-   "start": 8,
-   "end": 8.22
+   "text": "trabajo",
+   "start": 1.7,
+   "end": 2.2
   },
   {
    "text": "y",
-   "start": 8.22,
+   "start": 2.36,
+   "end": 2.4
+  },
+  {
+   "text": "lo",
+   "start": 2.44,
+   "end": 2.5
+  },
+  {
+   "text": "entrega",
+   "start": 2.52,
+   "end": 2.92
+  },
+  {
+   "text": "dos",
+   "start": 3.1,
+   "end": 3.32
+  },
+  {
+   "text": "veces",
+   "start": 3.42,
+   "end": 3.72
+  },
+  {
+   "text": "al",
+   "start": 3.76,
+   "end": 3.86
+  },
+  {
+   "text": "año,",
+   "start": 3.94,
+   "end": 4.18
+  },
+  {
+   "text": "como",
+   "start": 4.46,
+   "end": 4.7
+  },
+  {
+   "text": "parte",
+   "start": 4.74,
+   "end": 5.04
+  },
+  {
+   "text": "de",
+   "start": 5.08,
+   "end": 5.14
+  },
+  {
+   "text": "su",
+   "start": 5.22,
+   "end": 5.32
+  },
+  {
+   "text": "propuesta",
+   "start": 5.36,
+   "end": 5.82
+  },
+  {
+   "text": "de",
+   "start": 5.86,
+   "end": 5.94
+  },
+  {
+   "text": "valor.",
+   "start": 5.96,
+   "end": 6.32
+  },
+  {
+   "text": "Sigue",
+   "start": 7.06,
+   "end": 7.3
+  },
+  {
+   "text": "la",
+   "start": 7.34,
+   "end": 7.4
+  },
+  {
+   "text": "misma",
+   "start": 7.52,
+   "end": 7.78
+  },
+  {
+   "text": "secuencia:",
+   "start": 7.86,
    "end": 8.44
   },
   {
+   "text": "página",
+   "start": 8.94,
+   "end": 9.24
+  },
+  {
+   "text": "ochenta",
+   "start": 9.44,
+   "end": 9.66
+  },
+  {
+   "text": "y",
+   "start": 9.66,
+   "end": 9.879999999999999
+  },
+  {
    "text": "cuatro,",
-   "start": 8.44,
-   "end": 8.66
+   "start": 9.879999999999999,
+   "end": 10.1
   },
   {
    "text": "semana",
-   "start": 8.92,
-   "end": 9.32
+   "start": 10.38,
+   "end": 10.76
   },
   {
    "text": "veintiséis.",
-   "start": 9.46,
-   "end": 10.1
+   "start": 10.88,
+   "end": 11.52
   }
  ],
  "V07": [
@@ -1637,203 +1802,283 @@
   },
   {
    "text": "es",
-   "start": 0.5,
-   "end": 0.7
+   "start": 0.48,
+   "end": 0.74
   },
   {
    "text": "el",
-   "start": 0.86,
-   "end": 0.94
+   "start": 0.78,
+   "end": 0.88
   },
   {
    "text": "sistema",
-   "start": 0.98,
-   "end": 1.46
+   "start": 0.92,
+   "end": 1.4
   },
   {
    "text": "de",
-   "start": 1.48,
-   "end": 1.56
+   "start": 1.42,
+   "end": 1.5
   },
   {
    "text": "gestión",
-   "start": 1.62,
-   "end": 2.02
+   "start": 1.54,
+   "end": 1.94
   },
   {
    "text": "pedagógica:",
-   "start": 2.08,
-   "end": 2.82
+   "start": 1.98,
+   "end": 2.66
   },
   {
-   "text": "decisiones",
-   "start": 3.4,
+   "text": "dos",
+   "start": 3.3,
+   "end": 3.44
+  },
+  {
+   "text": "sistemas",
+   "start": 3.48,
    "end": 3.96
   },
   {
    "text": "que",
-   "start": 4.04,
-   "end": 4.18
+   "start": 4.019,
+   "end": 4.12
   },
   {
-   "text": "bajan",
-   "start": 4.22,
-   "end": 4.54
+   "text": "funcionan",
+   "start": 4.18,
+   "end": 4.68
   },
   {
-   "text": "hasta",
-   "start": 4.56,
+   "text": "a",
+   "start": 4.72,
    "end": 4.76
   },
   {
-   "text": "el",
+   "text": "la",
    "start": 4.8,
-   "end": 4.88
+   "end": 4.86
   },
   {
-   "text": "aula",
-   "start": 4.96,
-   "end": 5.24
+   "text": "vez,",
+   "start": 4.92,
+   "end": 5.2
+  },
+  {
+   "text": "el",
+   "start": 5.62,
+   "end": 5.72
+  },
+  {
+   "text": "de",
+   "start": 5.74,
+   "end": 5.8
+  },
+  {
+   "text": "liderazgo",
+   "start": 5.86,
+   "end": 6.44
   },
   {
    "text": "y",
-   "start": 5.42,
-   "end": 5.46
-  },
-  {
-   "text": "aprendizajes",
-   "start": 5.52,
-   "end": 6.3
-  },
-  {
-   "text": "que",
-   "start": 6.34,
-   "end": 6.4
-  },
-  {
-   "text": "suben",
-   "start": 6.6,
-   "end": 6.96
-  },
-  {
-   "text": "para",
-   "start": 6.98,
-   "end": 7.16
-  },
-  {
-   "text": "mejorarlas.",
-   "start": 7.2,
-   "end": 7.92
-  },
-  {
-   "text": "Es",
-   "start": 8.54,
-   "end": 8.64
-  },
-  {
-   "text": "uno",
-   "start": 8.7,
-   "end": 8.86
-  },
-  {
-   "text": "de",
-   "start": 8.9,
-   "end": 9.02
-  },
-  {
-   "text": "varios",
-   "start": 9.06,
-   "end": 9.38
-  },
-  {
-   "text": "sistemas",
-   "start": 9.4,
-   "end": 9.9
-  },
-  {
-   "text": "que",
-   "start": 9.96,
-   "end": 10.06
-  },
-  {
-   "text": "conviven",
-   "start": 10.1,
-   "end": 10.54
-  },
-  {
-   "text": "en",
-   "start": 10.58,
-   "end": 10.66
+   "start": 6.7,
+   "end": 6.74
   },
   {
    "text": "el",
-   "start": 10.7,
-   "end": 10.76
-  },
-  {
-   "text": "colegio.",
-   "start": 10.82,
-   "end": 11.3
-  },
-  {
-   "text": "Tener",
-   "start": 11.86,
-   "end": 12.14
-  },
-  {
-   "text": "claridad",
-   "start": 12.18,
-   "end": 12.66
+   "start": 6.78,
+   "end": 6.86
   },
   {
    "text": "de",
-   "start": 12.7,
-   "end": 12.76
+   "start": 6.9,
+   "end": 6.94
   },
   {
-   "text": "los",
-   "start": 12.8,
-   "end": 12.92
+   "text": "enseñanza",
+   "start": 6.98,
+   "end": 7.64
   },
   {
-   "text": "objetivos",
-   "start": 12.98,
-   "end": 13.6
+   "text": "y",
+   "start": 7.66,
+   "end": 7.7
   },
   {
-   "text": "fortalece",
-   "start": 13.78,
+   "text": "aprendizaje.",
+   "start": 7.76,
+   "end": 8.5
+  },
+  {
+   "text": "Decisiones",
+   "start": 9.16,
+   "end": 9.68
+  },
+  {
+   "text": "que",
+   "start": 9.76,
+   "end": 9.88
+  },
+  {
+   "text": "bajan",
+   "start": 9.94,
+   "end": 10.26
+  },
+  {
+   "text": "hasta",
+   "start": 10.28,
+   "end": 10.48
+  },
+  {
+   "text": "el",
+   "start": 10.52,
+   "end": 10.6
+  },
+  {
+   "text": "aula",
+   "start": 10.68,
+   "end": 10.96
+  },
+  {
+   "text": "y",
+   "start": 11.16,
+   "end": 11.2
+  },
+  {
+   "text": "aprendizajes",
+   "start": 11.26,
+   "end": 12
+  },
+  {
+   "text": "que",
+   "start": 12.08,
+   "end": 12.16
+  },
+  {
+   "text": "suben",
+   "start": 12.34,
+   "end": 12.7
+  },
+  {
+   "text": "para",
+   "start": 12.74,
+   "end": 12.9
+  },
+  {
+   "text": "mejorarlas.",
+   "start": 12.94,
+   "end": 13.66
+  },
+  {
+   "text": "Es",
+   "start": 14.36,
    "end": 14.46
   },
   {
-   "text": "la",
-   "start": 14.5,
-   "end": 14.54
-  },
-  {
-   "text": "calidad",
-   "start": 14.62,
-   "end": 15.02
+   "text": "uno",
+   "start": 14.52,
+   "end": 14.66
   },
   {
    "text": "de",
-   "start": 15.04,
-   "end": 15.1
+   "start": 14.7,
+   "end": 14.82
+  },
+  {
+   "text": "varios",
+   "start": 14.86,
+   "end": 15.14
+  },
+  {
+   "text": "sistemas",
+   "start": 15.18,
+   "end": 15.68
+  },
+  {
+   "text": "que",
+   "start": 15.7,
+   "end": 15.82
+  },
+  {
+   "text": "conviven",
+   "start": 15.84,
+   "end": 16.28
+  },
+  {
+   "text": "en",
+   "start": 16.32,
+   "end": 16.4
+  },
+  {
+   "text": "el",
+   "start": 16.44,
+   "end": 16.54
+  },
+  {
+   "text": "colegio.",
+   "start": 16.56,
+   "end": 17.02
+  },
+  {
+   "text": "Tener",
+   "start": 17.62,
+   "end": 17.9
+  },
+  {
+   "text": "claridad",
+   "start": 17.94,
+   "end": 18.44
+  },
+  {
+   "text": "de",
+   "start": 18.48,
+   "end": 18.52
+  },
+  {
+   "text": "los",
+   "start": 18.56,
+   "end": 18.68
+  },
+  {
+   "text": "objetivos",
+   "start": 18.76,
+   "end": 19.36
+  },
+  {
+   "text": "fortalece",
+   "start": 19.54,
+   "end": 20.18
+  },
+  {
+   "text": "la",
+   "start": 20.22,
+   "end": 20.26
+  },
+  {
+   "text": "calidad",
+   "start": 20.34,
+   "end": 20.76
+  },
+  {
+   "text": "de",
+   "start": 20.8,
+   "end": 20.86
   },
   {
    "text": "nuestro",
-   "start": 15.16,
-   "end": 15.4
+   "start": 20.9,
+   "end": 21.16
   },
   {
    "text": "servicio",
-   "start": 15.48,
-   "end": 15.86
+   "start": 21.24,
+   "end": 21.64
   },
   {
    "text": "educativo.",
-   "start": 15.9,
-   "end": 16.48
+   "start": 21.68,
+   "end": 22.28
   }
  ]
 }

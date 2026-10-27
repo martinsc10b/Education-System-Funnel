@@ -1,0 +1,2056 @@
+{
+ "W00": [
+  {
+   "text": "En",
+   "start": 0.08,
+   "end": 0.16
+  },
+  {
+   "text": "el",
+   "start": 0.18,
+   "end": 0.26
+  },
+  {
+   "text": "video",
+   "start": 0.32,
+   "end": 0.56
+  },
+  {
+   "text": "anterior",
+   "start": 0.6,
+   "end": 1.1
+  },
+  {
+   "text": "vimos",
+   "start": 1.42,
+   "end": 1.7
+  },
+  {
+   "text": "que",
+   "start": 1.74,
+   "end": 1.82
+  },
+  {
+   "text": "las",
+   "start": 1.86,
+   "end": 1.96
+  },
+  {
+   "text": "decisiones",
+   "start": 2,
+   "end": 2.68
+  },
+  {
+   "text": "bajan",
+   "start": 2.88,
+   "end": 3.22
+  },
+  {
+   "text": "hasta",
+   "start": 3.26,
+   "end": 3.44
+  },
+  {
+   "text": "el",
+   "start": 3.48,
+   "end": 3.56
+  },
+  {
+   "text": "aula.",
+   "start": 3.62,
+   "end": 3.92
+  },
+  {
+   "text": "Ahora",
+   "start": 4.303,
+   "end": 4.683
+  },
+  {
+   "text": "seguimos",
+   "start": 4.843,
+   "end": 5.203
+  },
+  {
+   "text": "el",
+   "start": 5.243,
+   "end": 5.303
+  },
+  {
+   "text": "camino",
+   "start": 5.363,
+   "end": 5.663
+  },
+  {
+   "text": "de",
+   "start": 5.703,
+   "end": 5.763
+  },
+  {
+   "text": "vuelta:",
+   "start": 5.823,
+   "end": 6.203
+  },
+  {
+   "text": "cómo",
+   "start": 6.203,
+   "end": 6.807
+  },
+  {
+   "text": "sabe",
+   "start": 6.947,
+   "end": 7.167
+  },
+  {
+   "text": "el",
+   "start": 7.207,
+   "end": 7.267
+  },
+  {
+   "text": "colegio",
+   "start": 7.347,
+   "end": 7.867
+  },
+  {
+   "text": "si",
+   "start": 7.987,
+   "end": 8.047
+  },
+  {
+   "text": "su",
+   "start": 8.127,
+   "end": 8.187
+  },
+  {
+   "text": "estrategia",
+   "start": 8.227,
+   "end": 8.867
+  },
+  {
+   "text": "está",
+   "start": 8.907,
+   "end": 9.227
+  },
+  {
+   "text": "llegando",
+   "start": 9.247,
+   "end": 9.627
+  },
+  {
+   "text": "a",
+   "start": 9.647,
+   "end": 9.687
+  },
+  {
+   "text": "los",
+   "start": 9.727,
+   "end": 9.827
+  },
+  {
+   "text": "estudiantes.",
+   "start": 9.887,
+   "end": 10.667
+  }
+ ],
+ "W01": [
+  {
+   "text": "Volvamos",
+   "start": 0.08,
+   "end": 0.5
+  },
+  {
+   "text": "a",
+   "start": 0.54,
+   "end": 0.58
+  },
+  {
+   "text": "la",
+   "start": 0.62,
+   "end": 0.66
+  },
+  {
+   "text": "clase",
+   "start": 0.74,
+   "end": 1.02
+  },
+  {
+   "text": "de",
+   "start": 1.06,
+   "end": 1.14
+  },
+  {
+   "text": "la",
+   "start": 1.16,
+   "end": 1.22
+  },
+  {
+   "text": "profesora",
+   "start": 1.28,
+   "end": 1.74
+  },
+  {
+   "text": "Carmen.",
+   "start": 1.84,
+   "end": 2.26
+  },
+  {
+   "text": "Su",
+   "start": 2.9,
+   "end": 2.96
+  },
+  {
+   "text": "propósito",
+   "start": 3.04,
+   "end": 3.64
+  },
+  {
+   "text": "tiene",
+   "start": 3.68,
+   "end": 3.9
+  },
+  {
+   "text": "dos",
+   "start": 4.1,
+   "end": 4.28
+  },
+  {
+   "text": "mitades.",
+   "start": 4.36,
+   "end": 4.94
+  },
+  {
+   "text": "Conocimiento:",
+   "start": 5.365,
+   "end": 6.125
+  },
+  {
+   "text": "resolver",
+   "start": 6.585,
+   "end": 7.065
+  },
+  {
+   "text": "el",
+   "start": 7.105,
+   "end": 7.165
+  },
+  {
+   "text": "sistema.",
+   "start": 7.245,
+   "end": 7.725
+  },
+  {
+   "text": "Enfoque",
+   "start": 8.144,
+   "end": 8.624
+  },
+  {
+   "text": "por",
+   "start": 8.664,
+   "end": 8.784
+  },
+  {
+   "text": "competencias:",
+   "start": 8.804,
+   "end": 9.644
+  },
+  {
+   "text": "explicar",
+   "start": 10.024,
+   "end": 10.544
+  },
+  {
+   "text": "qué",
+   "start": 10.744,
+   "end": 10.884
+  },
+  {
+   "text": "significa",
+   "start": 10.924,
+   "end": 11.484
+  },
+  {
+   "text": "la",
+   "start": 11.524,
+   "end": 11.584
+  },
+  {
+   "text": "solución",
+   "start": 11.644,
+   "end": 12.344
+  },
+  {
+   "text": "y",
+   "start": 12.384,
+   "end": 12.404
+  },
+  {
+   "text": "comprobarla.",
+   "start": 12.504,
+   "end": 13.184
+  }
+ ],
+ "W02": [
+  {
+   "text": "Bruno",
+   "start": 0.1,
+   "end": 0.38
+  },
+  {
+   "text": "resuelve,",
+   "start": 0.46,
+   "end": 1.02
+  },
+  {
+   "text": "explica",
+   "start": 1.44,
+   "end": 1.88
+  },
+  {
+   "text": "que",
+   "start": 1.94,
+   "end": 2.02
+  },
+  {
+   "text": "las",
+   "start": 2.06,
+   "end": 2.22
+  },
+  {
+   "text": "rectas",
+   "start": 2.28,
+   "end": 2.62
+  },
+  {
+   "text": "son",
+   "start": 2.66,
+   "end": 2.84
+  },
+  {
+   "text": "paralelas",
+   "start": 2.86,
+   "end": 3.5
+  },
+  {
+   "text": "y",
+   "start": 3.66,
+   "end": 3.7
+  },
+  {
+   "text": "lo",
+   "start": 3.74,
+   "end": 3.84
+  },
+  {
+   "text": "comprueba",
+   "start": 3.86,
+   "end": 4.36
+  },
+  {
+   "text": "en",
+   "start": 4.4,
+   "end": 4.48
+  },
+  {
+   "text": "una",
+   "start": 4.52,
+   "end": 4.66
+  },
+  {
+   "text": "gráfica:",
+   "start": 4.7,
+   "end": 5.18
+  },
+  {
+   "text": "cien",
+   "start": 5.7,
+   "end": 6
+  },
+  {
+   "text": "por",
+   "start": 6,
+   "end": 6.3
+  },
+  {
+   "text": "ciento.",
+   "start": 6.3,
+   "end": 6.6
+  },
+  {
+   "text": "Ana",
+   "start": 7.034,
+   "end": 7.254
+  },
+  {
+   "text": "también",
+   "start": 7.294,
+   "end": 7.694
+  },
+  {
+   "text": "llega",
+   "start": 7.754,
+   "end": 7.934
+  },
+  {
+   "text": "a",
+   "start": 7.954,
+   "end": 7.974
+  },
+  {
+   "text": "la",
+   "start": 8.014,
+   "end": 8.074
+  },
+  {
+   "text": "respuesta,",
+   "start": 8.154,
+   "end": 8.694
+  },
+  {
+   "text": "pero",
+   "start": 8.834,
+   "end": 9.034
+  },
+  {
+   "text": "no",
+   "start": 9.194,
+   "end": 9.294
+  },
+  {
+   "text": "sabe",
+   "start": 9.394,
+   "end": 9.554
+  },
+  {
+   "text": "explicar",
+   "start": 9.594,
+   "end": 10.034
+  },
+  {
+   "text": "por",
+   "start": 10.134,
+   "end": 10.234
+  },
+  {
+   "text": "qué:",
+   "start": 10.354,
+   "end": 10.494
+  },
+  {
+   "text": "cincuenta.",
+   "start": 11.394,
+   "end": 11.654
+  },
+  {
+   "text": "La",
+   "start": 12.064,
+   "end": 12.124
+  },
+  {
+   "text": "respuesta",
+   "start": 12.184,
+   "end": 12.704
+  },
+  {
+   "text": "es",
+   "start": 12.744,
+   "end": 12.824
+  },
+  {
+   "text": "la",
+   "start": 12.864,
+   "end": 12.924
+  },
+  {
+   "text": "misma.",
+   "start": 13.004,
+   "end": 13.364
+  },
+  {
+   "text": "El",
+   "start": 13.724,
+   "end": 13.804
+  },
+  {
+   "text": "razonamiento,",
+   "start": 13.844,
+   "end": 14.584
+  },
+  {
+   "text": "no.",
+   "start": 14.984,
+   "end": 15.124
+  }
+ ],
+ "W03": [
+  {
+   "text": "Al",
+   "start": 0.08,
+   "end": 0.16
+  },
+  {
+   "text": "cerrar",
+   "start": 0.22,
+   "end": 0.52
+  },
+  {
+   "text": "la",
+   "start": 0.56,
+   "end": 0.62
+  },
+  {
+   "text": "sesión,",
+   "start": 0.68,
+   "end": 1.14
+  },
+  {
+   "text": "Carmen",
+   "start": 1.52,
+   "end": 1.82
+  },
+  {
+   "text": "revisa",
+   "start": 1.88,
+   "end": 2.18
+  },
+  {
+   "text": "la",
+   "start": 2.24,
+   "end": 2.32
+  },
+  {
+   "text": "lista",
+   "start": 2.4,
+   "end": 2.66
+  },
+  {
+   "text": "de",
+   "start": 2.7,
+   "end": 2.74
+  },
+  {
+   "text": "cotejo",
+   "start": 2.8,
+   "end": 3.2
+  },
+  {
+   "text": "que",
+   "start": 3.3,
+   "end": 3.42
+  },
+  {
+   "text": "ya",
+   "start": 3.48,
+   "end": 3.64
+  },
+  {
+   "text": "usa.",
+   "start": 3.74,
+   "end": 4.019
+  },
+  {
+   "text": "Las",
+   "start": 4.447,
+   "end": 4.587
+  },
+  {
+   "text": "dos",
+   "start": 4.627,
+   "end": 4.747
+  },
+  {
+   "text": "mitades,",
+   "start": 4.807,
+   "end": 5.367
+  },
+  {
+   "text": "cien.",
+   "start": 5.727,
+   "end": 6.027
+  },
+  {
+   "text": "Una,",
+   "start": 6.434,
+   "end": 6.614
+  },
+  {
+   "text": "cincuenta.",
+   "start": 6.914,
+   "end": 7.534
+  },
+  {
+   "text": "Ninguna,",
+   "start": 7.974,
+   "end": 8.434
+  },
+  {
+   "text": "cero.",
+   "start": 8.834,
+   "end": 9.114
+  },
+  {
+   "text": "Y",
+   "start": 9.694,
+   "end": 9.714
+  },
+  {
+   "text": "quien",
+   "start": 9.794,
+   "end": 9.994
+  },
+  {
+   "text": "no",
+   "start": 10.054,
+   "end": 10.114
+  },
+  {
+   "text": "se",
+   "start": 10.194,
+   "end": 10.274
+  },
+  {
+   "text": "registró,",
+   "start": 10.334,
+   "end": 10.834
+  },
+  {
+   "text": "no",
+   "start": 11.174,
+   "end": 11.254
+  },
+  {
+   "text": "cuenta.",
+   "start": 11.334,
+   "end": 11.714
+  },
+  {
+   "text": "No",
+   "start": 12.173,
+   "end": 12.313
+  },
+  {
+   "text": "es",
+   "start": 12.373,
+   "end": 12.493
+  },
+  {
+   "text": "una",
+   "start": 12.553,
+   "end": 12.673
+  },
+  {
+   "text": "nota.",
+   "start": 12.753,
+   "end": 13.033
+  },
+  {
+   "text": "Es",
+   "start": 13.533,
+   "end": 13.633
+  },
+  {
+   "text": "una",
+   "start": 13.713,
+   "end": 13.813
+  },
+  {
+   "text": "señal.",
+   "start": 13.913,
+   "end": 14.293
+  }
+ ],
+ "W04": [
+  {
+   "text": "Una",
+   "start": 0.12,
+   "end": 0.28
+  },
+  {
+   "text": "sesión",
+   "start": 0.32,
+   "end": 0.74
+  },
+  {
+   "text": "no",
+   "start": 0.96,
+   "end": 1.1
+  },
+  {
+   "text": "basta.",
+   "start": 1.14,
+   "end": 1.54
+  },
+  {
+   "text": "En",
+   "start": 1.964,
+   "end": 2.104
+  },
+  {
+   "text": "cinco",
+   "start": 2.164,
+   "end": 2.404
+  },
+  {
+   "text": "sesiones",
+   "start": 2.504,
+   "end": 2.964
+  },
+  {
+   "text": "de",
+   "start": 2.984,
+   "end": 3.064
+  },
+  {
+   "text": "la",
+   "start": 3.084,
+   "end": 3.144
+  },
+  {
+   "text": "unidad,",
+   "start": 3.204,
+   "end": 3.624
+  },
+  {
+   "text": "Bruno",
+   "start": 4.024,
+   "end": 4.324
+  },
+  {
+   "text": "logra",
+   "start": 4.384,
+   "end": 4.684
+  },
+  {
+   "text": "las",
+   "start": 4.724,
+   "end": 4.884
+  },
+  {
+   "text": "dos",
+   "start": 4.984,
+   "end": 5.144
+  },
+  {
+   "text": "mitades",
+   "start": 5.224,
+   "end": 5.784
+  },
+  {
+   "text": "tres",
+   "start": 5.844,
+   "end": 6.084
+  },
+  {
+   "text": "veces",
+   "start": 6.144,
+   "end": 6.684
+  },
+  {
+   "text": "y",
+   "start": 6.784,
+   "end": 6.844
+  },
+  {
+   "text": "una",
+   "start": 6.924,
+   "end": 7.064
+  },
+  {
+   "text": "mitad",
+   "start": 7.104,
+   "end": 7.464
+  },
+  {
+   "text": "dos",
+   "start": 7.724,
+   "end": 7.924
+  },
+  {
+   "text": "veces.",
+   "start": 8.004,
+   "end": 8.444
+  },
+  {
+   "text": "Su",
+   "start": 8.918,
+   "end": 9.038
+  },
+  {
+   "text": "brújula",
+   "start": 9.078,
+   "end": 9.438
+  },
+  {
+   "text": "en",
+   "start": 9.478,
+   "end": 9.558
+  },
+  {
+   "text": "la",
+   "start": 9.598,
+   "end": 9.658
+  },
+  {
+   "text": "unidad:",
+   "start": 9.718,
+   "end": 10.158
+  },
+  {
+   "text": "ochenta",
+   "start": 10.878,
+   "end": 11.164
+  },
+  {
+   "text": "por",
+   "start": 11.164,
+   "end": 11.451
+  },
+  {
+   "text": "ciento.",
+   "start": 11.451,
+   "end": 11.738
+  }
+ ],
+ "W05": [
+  {
+   "text": "En",
+   "start": 0.08,
+   "end": 0.16
+  },
+  {
+   "text": "cuarto",
+   "start": 0.28,
+   "end": 0.62
+  },
+  {
+   "text": "A",
+   "start": 0.7,
+   "end": 0.86
+  },
+  {
+   "text": "hay",
+   "start": 1.06,
+   "end": 1.22
+  },
+  {
+   "text": "veinte",
+   "start": 1.48,
+   "end": 1.66
+  },
+  {
+   "text": "estudiantes.",
+   "start": 1.7,
+   "end": 2.48
+  },
+  {
+   "text": "Hoy",
+   "start": 2.867,
+   "end": 3.067
+  },
+  {
+   "text": "se",
+   "start": 3.167,
+   "end": 3.267
+  },
+  {
+   "text": "registraron",
+   "start": 3.307,
+   "end": 3.867
+  },
+  {
+   "text": "dieciocho:",
+   "start": 3.907,
+   "end": 4.507
+  },
+  {
+   "text": "nueve",
+   "start": 4.998,
+   "end": 5.338
+  },
+  {
+   "text": "logran",
+   "start": 5.518,
+   "end": 5.818
+  },
+  {
+   "text": "las",
+   "start": 5.858,
+   "end": 5.978
+  },
+  {
+   "text": "dos",
+   "start": 6.038,
+   "end": 6.178
+  },
+  {
+   "text": "mitades",
+   "start": 6.238,
+   "end": 6.818
+  },
+  {
+   "text": "y",
+   "start": 6.998,
+   "end": 7.038
+  },
+  {
+   "text": "nueve,",
+   "start": 7.118,
+   "end": 7.478
+  },
+  {
+   "text": "una.",
+   "start": 7.798,
+   "end": 8.038
+  },
+  {
+   "text": "La",
+   "start": 8.638,
+   "end": 8.698
+  },
+  {
+   "text": "sección",
+   "start": 8.778,
+   "end": 9.178
+  },
+  {
+   "text": "está",
+   "start": 9.238,
+   "end": 9.618
+  },
+  {
+   "text": "en",
+   "start": 9.658,
+   "end": 9.778
+  },
+  {
+   "text": "setenta",
+   "start": 10.038,
+   "end": 10.294
+  },
+  {
+   "text": "y",
+   "start": 10.294,
+   "end": 10.55
+  },
+  {
+   "text": "cinco",
+   "start": 10.55,
+   "end": 10.806
+  },
+  {
+   "text": "por",
+   "start": 10.806,
+   "end": 11.062
+  },
+  {
+   "text": "ciento.",
+   "start": 11.062,
+   "end": 11.318
+  }
+ ],
+ "W06": [
+  {
+   "text": "La",
+   "start": 0.1,
+   "end": 0.16
+  },
+  {
+   "text": "primera",
+   "start": 0.22,
+   "end": 0.54
+  },
+  {
+   "text": "en",
+   "start": 0.58,
+   "end": 0.66
+  },
+  {
+   "text": "usar",
+   "start": 0.7,
+   "end": 0.94
+  },
+  {
+   "text": "esa",
+   "start": 0.98,
+   "end": 1.18
+  },
+  {
+   "text": "señal",
+   "start": 1.22,
+   "end": 1.6
+  },
+  {
+   "text": "es",
+   "start": 1.74,
+   "end": 1.92
+  },
+  {
+   "text": "Carmen.",
+   "start": 1.96,
+   "end": 2.36
+  },
+  {
+   "text": "En",
+   "start": 2.695,
+   "end": 2.755
+  },
+  {
+   "text": "la",
+   "start": 2.795,
+   "end": 2.855
+  },
+  {
+   "text": "siguiente",
+   "start": 2.915,
+   "end": 3.255
+  },
+  {
+   "text": "sesión",
+   "start": 3.355,
+   "end": 3.835
+  },
+  {
+   "text": "vuelve",
+   "start": 4.035,
+   "end": 4.275
+  },
+  {
+   "text": "a",
+   "start": 4.295,
+   "end": 4.295
+  },
+  {
+   "text": "explicar",
+   "start": 4.335,
+   "end": 4.815
+  },
+  {
+   "text": "qué",
+   "start": 5.015,
+   "end": 5.155
+  },
+  {
+   "text": "significa",
+   "start": 5.195,
+   "end": 5.775
+  },
+  {
+   "text": "un",
+   "start": 5.815,
+   "end": 5.915
+  },
+  {
+   "text": "sistema",
+   "start": 5.955,
+   "end": 6.355
+  },
+  {
+   "text": "sin",
+   "start": 6.435,
+   "end": 6.575
+  },
+  {
+   "text": "solución,",
+   "start": 6.615,
+   "end": 7.175
+  },
+  {
+   "text": "y",
+   "start": 7.695,
+   "end": 7.714
+  },
+  {
+   "text": "registra",
+   "start": 7.815,
+   "end": 8.415
+  },
+  {
+   "text": "a",
+   "start": 8.455,
+   "end": 8.495
+  },
+  {
+   "text": "quienes",
+   "start": 8.575,
+   "end": 8.835
+  },
+  {
+   "text": "faltaron.",
+   "start": 8.875,
+   "end": 9.375
+  }
+ ],
+ "W07": [
+  {
+   "text": "Las",
+   "start": 0.1,
+   "end": 0.2
+  },
+  {
+   "text": "secciones",
+   "start": 0.24,
+   "end": 0.74
+  },
+  {
+   "text": "se",
+   "start": 0.78,
+   "end": 0.86
+  },
+  {
+   "text": "juntan.",
+   "start": 0.94,
+   "end": 1.42
+  },
+  {
+   "text": "Cuarto",
+   "start": 1.781,
+   "end": 2.041
+  },
+  {
+   "text": "grado",
+   "start": 2.101,
+   "end": 2.461
+  },
+  {
+   "text": "llega",
+   "start": 2.561,
+   "end": 2.881
+  },
+  {
+   "text": "a",
+   "start": 2.941,
+   "end": 3.001
+  },
+  {
+   "text": "setenta",
+   "start": 3.241,
+   "end": 3.861
+  },
+  {
+   "text": "y",
+   "start": 4.341,
+   "end": 4.381
+  },
+  {
+   "text": "dos,",
+   "start": 4.381,
+   "end": 4.411
+  },
+  {
+   "text": "y",
+   "start": 4.411,
+   "end": 4.441
+  },
+  {
+   "text": "una",
+   "start": 4.441,
+   "end": 4.561
+  },
+  {
+   "text": "sección",
+   "start": 4.641,
+   "end": 4.981
+  },
+  {
+   "text": "en",
+   "start": 5.021,
+   "end": 5.161
+  },
+  {
+   "text": "sesenta",
+   "start": 5.521,
+   "end": 5.941
+  },
+  {
+   "text": "destaca",
+   "start": 5.981,
+   "end": 6.501
+  },
+  {
+   "text": "de",
+   "start": 6.521,
+   "end": 6.561
+  },
+  {
+   "text": "inmediato.",
+   "start": 6.601,
+   "end": 7.161
+  },
+  {
+   "text": "Con",
+   "start": 7.527,
+   "end": 7.666
+  },
+  {
+   "text": "quinto,",
+   "start": 7.767,
+   "end": 8.147
+  },
+  {
+   "text": "secundaria",
+   "start": 8.467,
+   "end": 9.047
+  },
+  {
+   "text": "alta",
+   "start": 9.107,
+   "end": 9.387
+  },
+  {
+   "text": "suma",
+   "start": 9.507,
+   "end": 9.787
+  },
+  {
+   "text": "setenta",
+   "start": 10.027,
+   "end": 10.267
+  },
+  {
+   "text": "y",
+   "start": 10.267,
+   "end": 10.507
+  },
+  {
+   "text": "cuatro.",
+   "start": 10.507,
+   "end": 10.747
+  }
+ ],
+ "W08": [
+  {
+   "text": "La",
+   "start": 0.1,
+   "end": 0.16
+  },
+  {
+   "text": "coordinación",
+   "start": 0.22,
+   "end": 0.9
+  },
+  {
+   "text": "ajusta",
+   "start": 1.08,
+   "end": 1.48
+  },
+  {
+   "text": "las",
+   "start": 1.52,
+   "end": 1.62
+  },
+  {
+   "text": "sesiones",
+   "start": 1.66,
+   "end": 2.14
+  },
+  {
+   "text": "que",
+   "start": 2.2,
+   "end": 2.32
+  },
+  {
+   "text": "quedan",
+   "start": 2.36,
+   "end": 2.62
+  },
+  {
+   "text": "en",
+   "start": 2.66,
+   "end": 2.74
+  },
+  {
+   "text": "la",
+   "start": 2.76,
+   "end": 2.82
+  },
+  {
+   "text": "unidad",
+   "start": 2.86,
+   "end": 3.3
+  },
+  {
+   "text": "y",
+   "start": 3.5,
+   "end": 3.56
+  },
+  {
+   "text": "anota",
+   "start": 3.62,
+   "end": 3.94
+  },
+  {
+   "text": "qué",
+   "start": 4.12,
+   "end": 4.26
+  },
+  {
+   "text": "cambiar",
+   "start": 4.3,
+   "end": 4.72
+  },
+  {
+   "text": "en",
+   "start": 4.76,
+   "end": 4.82
+  },
+  {
+   "text": "el",
+   "start": 4.88,
+   "end": 5
+  },
+  {
+   "text": "próximo",
+   "start": 5.04,
+   "end": 5.46
+  },
+  {
+   "text": "cuaderno",
+   "start": 5.5,
+   "end": 5.9
+  },
+  {
+   "text": "de",
+   "start": 5.92,
+   "end": 6.02
+  },
+  {
+   "text": "trabajo.",
+   "start": 6.04,
+   "end": 6.5
+  },
+  {
+   "text": "Al",
+   "start": 6.866,
+   "end": 6.966
+  },
+  {
+   "text": "cerrar",
+   "start": 7.006,
+   "end": 7.286
+  },
+  {
+   "text": "el",
+   "start": 7.346,
+   "end": 7.426
+  },
+  {
+   "text": "bimestre,",
+   "start": 7.446,
+   "end": 7.966
+  },
+  {
+   "text": "la",
+   "start": 8.346,
+   "end": 8.406
+  },
+  {
+   "text": "dirección",
+   "start": 8.446,
+   "end": 8.906
+  },
+  {
+   "text": "compara",
+   "start": 8.946,
+   "end": 9.326
+  },
+  {
+   "text": "cada",
+   "start": 9.486,
+   "end": 9.726
+  },
+  {
+   "text": "división",
+   "start": 9.766,
+   "end": 10.346
+  },
+  {
+   "text": "con",
+   "start": 10.386,
+   "end": 10.506
+  },
+  {
+   "text": "la",
+   "start": 10.526,
+   "end": 10.586
+  },
+  {
+   "text": "meta",
+   "start": 10.666,
+   "end": 10.926
+  },
+  {
+   "text": "del",
+   "start": 10.966,
+   "end": 11.106
+  },
+  {
+   "text": "PCI",
+   "start": 11.266,
+   "end": 12.426
+  },
+  {
+   "text": "y",
+   "start": 12.726,
+   "end": 12.786
+  },
+  {
+   "text": "ajusta",
+   "start": 12.846,
+   "end": 13.266
+  },
+  {
+   "text": "el",
+   "start": 13.306,
+   "end": 13.366
+  },
+  {
+   "text": "PAT.",
+   "start": 13.466,
+   "end": 13.746
+  },
+  {
+   "text": "Ese",
+   "start": 14.17,
+   "end": 14.39
+  },
+  {
+   "text": "paso",
+   "start": 14.43,
+   "end": 14.73
+  },
+  {
+   "text": "ya",
+   "start": 14.97,
+   "end": 15.13
+  },
+  {
+   "text": "es",
+   "start": 15.23,
+   "end": 15.35
+  },
+  {
+   "text": "el",
+   "start": 15.41,
+   "end": 15.51
+  },
+  {
+   "text": "sistema",
+   "start": 15.53,
+   "end": 15.93
+  },
+  {
+   "text": "de",
+   "start": 15.97,
+   "end": 16.05
+  },
+  {
+   "text": "liderazgo.",
+   "start": 16.09,
+   "end": 16.65
+  }
+ ],
+ "W09": [
+  {
+   "text": "Bruno",
+   "start": 0.1,
+   "end": 0.56
+  },
+  {
+   "text": "es",
+   "start": 0.6,
+   "end": 0.72
+  },
+  {
+   "text": "uno",
+   "start": 0.78,
+   "end": 0.92
+  },
+  {
+   "text": "de",
+   "start": 0.98,
+   "end": 1.06
+  },
+  {
+   "text": "novecientos",
+   "start": 1.12,
+   "end": 1.88
+  },
+  {
+   "text": "diecinueve",
+   "start": 1.9,
+   "end": 2.46
+  },
+  {
+   "text": "estudiantes.",
+   "start": 2.5,
+   "end": 3.3
+  },
+  {
+   "text": "Cada",
+   "start": 3.718,
+   "end": 3.938
+  },
+  {
+   "text": "uno",
+   "start": 4.018,
+   "end": 4.178
+  },
+  {
+   "text": "pesa",
+   "start": 4.278,
+   "end": 4.498
+  },
+  {
+   "text": "lo",
+   "start": 4.538,
+   "end": 4.598
+  },
+  {
+   "text": "mismo,",
+   "start": 4.678,
+   "end": 5.018
+  },
+  {
+   "text": "y",
+   "start": 5.458,
+   "end": 5.498
+  },
+  {
+   "text": "juntos",
+   "start": 5.618,
+   "end": 6.078
+  },
+  {
+   "text": "forman",
+   "start": 6.258,
+   "end": 6.558
+  },
+  {
+   "text": "la",
+   "start": 6.598,
+   "end": 6.658
+  },
+  {
+   "text": "brújula",
+   "start": 6.758,
+   "end": 7.158
+  },
+  {
+   "text": "del",
+   "start": 7.198,
+   "end": 7.298
+  },
+  {
+   "text": "colegio:",
+   "start": 7.358,
+   "end": 7.798
+  },
+  {
+   "text": "setenta",
+   "start": 8.538,
+   "end": 8.778
+  },
+  {
+   "text": "y",
+   "start": 8.778,
+   "end": 9.018
+  },
+  {
+   "text": "ocho",
+   "start": 9.018,
+   "end": 9.258
+  },
+  {
+   "text": "por",
+   "start": 9.258,
+   "end": 9.498
+  },
+  {
+   "text": "ciento.",
+   "start": 9.498,
+   "end": 9.738
+  },
+  {
+   "text": "Es",
+   "start": 10.124,
+   "end": 10.224
+  },
+  {
+   "text": "el",
+   "start": 10.264,
+   "end": 10.404
+  },
+  {
+   "text": "mismo",
+   "start": 10.464,
+   "end": 10.744
+  },
+  {
+   "text": "número,",
+   "start": 10.844,
+   "end": 11.184
+  },
+  {
+   "text": "a",
+   "start": 11.504,
+   "end": 11.524
+  },
+  {
+   "text": "distintas",
+   "start": 11.584,
+   "end": 12.084
+  },
+  {
+   "text": "escalas.",
+   "start": 12.124,
+   "end": 12.704
+  }
+ ],
+ "W10": [
+  {
+   "text": "La",
+   "start": 0.1,
+   "end": 0.16
+  },
+  {
+   "text": "brújula",
+   "start": 0.22,
+   "end": 0.64
+  },
+  {
+   "text": "de",
+   "start": 0.68,
+   "end": 0.74
+  },
+  {
+   "text": "cada",
+   "start": 0.86,
+   "end": 1.04
+  },
+  {
+   "text": "sesión",
+   "start": 1.12,
+   "end": 1.56
+  },
+  {
+   "text": "da",
+   "start": 1.8,
+   "end": 1.92
+  },
+  {
+   "text": "el",
+   "start": 1.94,
+   "end": 2.02
+  },
+  {
+   "text": "pulso",
+   "start": 2.18,
+   "end": 2.5
+  },
+  {
+   "text": "diario.",
+   "start": 2.56,
+   "end": 3
+  },
+  {
+   "text": "Los",
+   "start": 3.54,
+   "end": 3.66
+  },
+  {
+   "text": "exámenes",
+   "start": 3.72,
+   "end": 4.4
+  },
+  {
+   "text": "confirman",
+   "start": 4.44,
+   "end": 5.04
+  },
+  {
+   "text": "el",
+   "start": 5.08,
+   "end": 5.14
+  },
+  {
+   "text": "conocimiento.",
+   "start": 5.2,
+   "end": 5.96
+  },
+  {
+   "text": "El",
+   "start": 6.323,
+   "end": 6.363
+  },
+  {
+   "text": "proyecto",
+   "start": 6.443,
+   "end": 6.823
+  },
+  {
+   "text": "STEAM",
+   "start": 6.943,
+   "end": 7.303
+  },
+  {
+   "text": "confirma",
+   "start": 7.443,
+   "end": 7.983
+  },
+  {
+   "text": "el",
+   "start": 8.003,
+   "end": 8.063
+  },
+  {
+   "text": "enfoque",
+   "start": 8.123,
+   "end": 8.583
+  },
+  {
+   "text": "por",
+   "start": 8.623,
+   "end": 8.743
+  },
+  {
+   "text": "competencias.",
+   "start": 8.783,
+   "end": 9.603
+  },
+  {
+   "text": "Cada",
+   "start": 9.999,
+   "end": 10.179
+  },
+  {
+   "text": "nivel",
+   "start": 10.259,
+   "end": 10.539
+  },
+  {
+   "text": "pondera",
+   "start": 10.639,
+   "end": 10.979
+  },
+  {
+   "text": "sus",
+   "start": 11.059,
+   "end": 11.219
+  },
+  {
+   "text": "notas",
+   "start": 11.279,
+   "end": 11.559
+  },
+  {
+   "text": "a",
+   "start": 11.599,
+   "end": 11.619
+  },
+  {
+   "text": "su",
+   "start": 11.699,
+   "end": 11.779
+  },
+  {
+   "text": "manera;",
+   "start": 11.839,
+   "end": 12.219
+  },
+  {
+   "text": "la",
+   "start": 12.699,
+   "end": 12.759
+  },
+  {
+   "text": "brújula",
+   "start": 12.839,
+   "end": 13.319
+  },
+  {
+   "text": "se",
+   "start": 13.479,
+   "end": 13.579
+  },
+  {
+   "text": "lee",
+   "start": 13.639,
+   "end": 13.919
+  },
+  {
+   "text": "igual",
+   "start": 14.019,
+   "end": 14.339
+  },
+  {
+   "text": "en",
+   "start": 14.379,
+   "end": 14.459
+  },
+  {
+   "text": "todos.",
+   "start": 14.559,
+   "end": 14.979
+  },
+  {
+   "text": "Si",
+   "start": 15.439,
+   "end": 15.519
+  },
+  {
+   "text": "no",
+   "start": 15.579,
+   "end": 15.679
+  },
+  {
+   "text": "coinciden,",
+   "start": 15.719,
+   "end": 16.299
+  },
+  {
+   "text": "eso",
+   "start": 16.559,
+   "end": 16.779
+  },
+  {
+   "text": "también",
+   "start": 16.819,
+   "end": 17.259
+  },
+  {
+   "text": "es",
+   "start": 17.299,
+   "end": 17.379
+  },
+  {
+   "text": "una",
+   "start": 17.439,
+   "end": 17.559
+  },
+  {
+   "text": "señal.",
+   "start": 17.639,
+   "end": 17.999
+  }
+ ],
+ "W11": [
+  {
+   "text": "La",
+   "start": 0.1,
+   "end": 0.18
+  },
+  {
+   "text": "brújula",
+   "start": 0.24,
+   "end": 0.7
+  },
+  {
+   "text": "no",
+   "start": 0.94,
+   "end": 1.06
+  },
+  {
+   "text": "juzga",
+   "start": 1.18,
+   "end": 1.54
+  },
+  {
+   "text": "a",
+   "start": 1.58,
+   "end": 1.62
+  },
+  {
+   "text": "los",
+   "start": 1.68,
+   "end": 1.78
+  },
+  {
+   "text": "estudiantes.",
+   "start": 1.84,
+   "end": 2.62
+  },
+  {
+   "text": "Con",
+   "start": 3.06,
+   "end": 3.2
+  },
+  {
+   "text": "ella",
+   "start": 3.28,
+   "end": 3.54
+  },
+  {
+   "text": "podemos",
+   "start": 3.72,
+   "end": 4.12
+  },
+  {
+   "text": "ver,",
+   "start": 4.16,
+   "end": 4.36
+  },
+  {
+   "text": "cada",
+   "start": 4.62,
+   "end": 4.86
+  },
+  {
+   "text": "bimestre,",
+   "start": 4.88,
+   "end": 5.42
+  },
+  {
+   "text": "si",
+   "start": 5.86,
+   "end": 5.94
+  },
+  {
+   "text": "vamos",
+   "start": 5.98,
+   "end": 6.26
+  },
+  {
+   "text": "camino",
+   "start": 6.3,
+   "end": 6.68
+  },
+  {
+   "text": "a",
+   "start": 6.72,
+   "end": 6.76
+  },
+  {
+   "text": "las",
+   "start": 6.8,
+   "end": 6.94
+  },
+  {
+   "text": "metas",
+   "start": 7,
+   "end": 7.26
+  },
+  {
+   "text": "del",
+   "start": 7.3,
+   "end": 7.42
+  },
+  {
+   "text": "2030.",
+   "start": 7.56,
+   "end": 8.2
+  },
+  {
+   "text": "Es",
+   "start": 8.604,
+   "end": 8.704
+  },
+  {
+   "text": "una",
+   "start": 8.764,
+   "end": 8.864
+  },
+  {
+   "text": "hipótesis",
+   "start": 8.884,
+   "end": 9.504
+  },
+  {
+   "text": "que",
+   "start": 9.544,
+   "end": 9.624
+  },
+  {
+   "text": "vamos",
+   "start": 9.644,
+   "end": 9.864
+  },
+  {
+   "text": "a",
+   "start": 9.904,
+   "end": 9.924
+  },
+  {
+   "text": "probar",
+   "start": 10.004,
+   "end": 10.264
+  },
+  {
+   "text": "juntos:",
+   "start": 10.384,
+   "end": 10.884
+  },
+  {
+   "text": "si",
+   "start": 11.404,
+   "end": 11.484
+  },
+  {
+   "text": "nos",
+   "start": 11.524,
+   "end": 11.704
+  },
+  {
+   "text": "muestra",
+   "start": 11.744,
+   "end": 12.104
+  },
+  {
+   "text": "dónde",
+   "start": 12.344,
+   "end": 12.604
+  },
+  {
+   "text": "funciona",
+   "start": 12.704,
+   "end": 13.224
+  },
+  {
+   "text": "nuestro",
+   "start": 13.284,
+   "end": 13.544
+  },
+  {
+   "text": "sistema",
+   "start": 13.624,
+   "end": 14.024
+  },
+  {
+   "text": "de",
+   "start": 14.044,
+   "end": 14.124
+  },
+  {
+   "text": "gestión",
+   "start": 14.164,
+   "end": 14.484
+  },
+  {
+   "text": "pedagógica,",
+   "start": 14.544,
+   "end": 15.204
+  },
+  {
+   "text": "y",
+   "start": 15.624,
+   "end": 15.684
+  },
+  {
+   "text": "qué",
+   "start": 15.864,
+   "end": 16.063
+  },
+  {
+   "text": "capa",
+   "start": 16.104,
+   "end": 16.444
+  },
+  {
+   "text": "mover",
+   "start": 16.504,
+   "end": 16.804
+  },
+  {
+   "text": "primero.",
+   "start": 16.844,
+   "end": 17.264
+  }
+ ]
+}
